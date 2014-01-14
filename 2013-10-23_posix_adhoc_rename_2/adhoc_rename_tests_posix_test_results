@@ -1,0 +1,252 @@
+mkdir /tmp_dir_32/ 0 
+None1
+mkdir /tmp_dir_32/d1 0 
+None1
+mkdir /tmp_dir_32/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_32/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_32/ /tmp_dir_32/d1/nonempty_dir1/f1.txt/
+[EINVAL]
+mkdir /tmp_dir_33/ 0 
+None1
+mkdir /tmp_dir_33/d1 0 
+None1
+mkdir /tmp_dir_33/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_33/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_33/ /tmp_dir_33/d1/nonempty_dir1/f1.txt/nonexist
+[ENOTDIR]
+mkdir /tmp_dir_34/ 0 
+None1
+mkdir /tmp_dir_34/d1 0 
+None1
+mkdir /tmp_dir_34/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_34/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_34/ /tmp_dir_34/d1/nonempty_dir1/f1.txt/..
+[ENOTDIR]
+mkdir /tmp_dir_35/ 0 
+None1
+mkdir /tmp_dir_35/d1 0 
+None1
+mkdir /tmp_dir_35/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_35/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_35/ /tmp_dir_35/d1/nonempty_dir1/f1.txt/../../../..
+[ENOTDIR]
+mkdir /tmp_dir_36/ 0 
+None1
+mkdir /tmp_dir_36/d1 0 
+None1
+mkdir /tmp_dir_36/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_36/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_36/ /tmp_dir_37/d1/..
+[ENOENT]
+mkdir /tmp_dir_37/ 0 
+None1
+mkdir /tmp_dir_37/d1 0 
+None1
+mkdir /tmp_dir_37/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_37/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2/d4 0 
+None1
+rename /tmp_dir_37 /tmp_dir_37/d1/../..
+[EBUSY]
