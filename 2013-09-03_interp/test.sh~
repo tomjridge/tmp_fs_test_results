@@ -1,0 +1,1 @@
+/tmp/l/general/research/fs/test/src/interp -m dir_heap tests >interp_test_results

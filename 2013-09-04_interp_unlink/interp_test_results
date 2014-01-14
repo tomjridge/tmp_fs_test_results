@@ -1,0 +1,2846 @@
+mkdir /tmp_dir_0/ 0 
+None1
+mkdir /tmp_dir_0/d1 0 
+None1
+mkdir /tmp_dir_0/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_0/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_0/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_0/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_0/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_0/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_0/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_0/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_0/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_0/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_0/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_0/
+[EISDIR]
+mkdir /tmp_dir_1/ 0 
+None1
+mkdir /tmp_dir_1/d1 0 
+None1
+mkdir /tmp_dir_1/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_1/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_1/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_1/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_1/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_1/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_1/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_1/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_1/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_1/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_1/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_1/d1
+[EISDIR]
+mkdir /tmp_dir_2/ 0 
+None1
+mkdir /tmp_dir_2/d1 0 
+None1
+mkdir /tmp_dir_2/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_2/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_2/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_2/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_2/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_2/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_2/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_2/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_2/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_2/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_2/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_2/d1/empty_dir1
+[EISDIR]
+mkdir /tmp_dir_3/ 0 
+None1
+mkdir /tmp_dir_3/d1 0 
+None1
+mkdir /tmp_dir_3/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_3/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_3/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_3/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_3/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_3/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_3/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_3/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_3/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_3/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_3/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_3/d1/empty_dir2
+[EISDIR]
+mkdir /tmp_dir_4/ 0 
+None1
+mkdir /tmp_dir_4/d1 0 
+None1
+mkdir /tmp_dir_4/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_4/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_4/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_4/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_4/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_4/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_4/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_4/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_4/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_4/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_4/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_4/d1/nonempty_dir1
+[EISDIR]
+mkdir /tmp_dir_5/ 0 
+None1
+mkdir /tmp_dir_5/d1 0 
+None1
+mkdir /tmp_dir_5/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_5/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_5/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_5/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_5/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_5/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_5/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_5/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_5/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_5/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_5/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_5/d1/nonempty_dir1/f1.txt
+None1
+mkdir /tmp_dir_6/ 0 
+None1
+mkdir /tmp_dir_6/d1 0 
+None1
+mkdir /tmp_dir_6/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_6/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_6/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_6/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_6/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_6/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_6/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_6/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_6/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_6/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_6/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_6/d1/nonempty_dir1/f2.txt
+None1
+mkdir /tmp_dir_7/ 0 
+None1
+mkdir /tmp_dir_7/d1 0 
+None1
+mkdir /tmp_dir_7/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_7/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_7/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_7/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_7/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_7/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_7/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_7/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_7/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_7/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_7/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_7/d1/nonempty_dir1/d2
+[EISDIR]
+mkdir /tmp_dir_8/ 0 
+None1
+mkdir /tmp_dir_8/d1 0 
+None1
+mkdir /tmp_dir_8/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_8/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_8/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_8/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_8/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_8/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_8/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_8/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_8/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_8/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_8/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_8/d1/nonempty_dir1/d2/f3.txt
+None1
+mkdir /tmp_dir_9/ 0 
+None1
+mkdir /tmp_dir_9/d1 0 
+None1
+mkdir /tmp_dir_9/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_9/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_9/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_9/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_9/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_9/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_9/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_9/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_9/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_9/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_9/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_9/d1/nonempty_dir1/d2/f4.txt
+None1
+mkdir /tmp_dir_10/ 0 
+None1
+mkdir /tmp_dir_10/d1 0 
+None1
+mkdir /tmp_dir_10/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_10/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_10/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_10/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_10/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_10/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_10/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_10/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_10/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_10/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_10/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_10/d1/nonempty_dir1/d2/d3
+[EISDIR]
+mkdir /tmp_dir_11/ 0 
+None1
+mkdir /tmp_dir_11/d1 0 
+None1
+mkdir /tmp_dir_11/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_11/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_11/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_11/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_11/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_11/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_11/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_11/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_11/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_11/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_11/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_11/d1/nonempty_dir1/d2/d4
+[EISDIR]
+mkdir /tmp_dir_12/ 0 
+None1
+mkdir /tmp_dir_12/d1 0 
+None1
+mkdir /tmp_dir_12/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_12/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_12/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_12/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_12/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_12/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_12/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_12/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_12/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_12/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_12/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_12/d1/nonempty_dir2
+[EISDIR]
+mkdir /tmp_dir_13/ 0 
+None1
+mkdir /tmp_dir_13/d1 0 
+None1
+mkdir /tmp_dir_13/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_13/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_13/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_13/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_13/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_13/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_13/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_13/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_13/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_13/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_13/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_13/d1/nonempty_dir2/f1.txt
+None1
+mkdir /tmp_dir_14/ 0 
+None1
+mkdir /tmp_dir_14/d1 0 
+None1
+mkdir /tmp_dir_14/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_14/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_14/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_14/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_14/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_14/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_14/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_14/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_14/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_14/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_14/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_14/d1/nonempty_dir2/f2.txt
+None1
+mkdir /tmp_dir_15/ 0 
+None1
+mkdir /tmp_dir_15/d1 0 
+None1
+mkdir /tmp_dir_15/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_15/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_15/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_15/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_15/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_15/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_15/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_15/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_15/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_15/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_15/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_15/d1/nonempty_dir2/d2
+[EISDIR]
+mkdir /tmp_dir_16/ 0 
+None1
+mkdir /tmp_dir_16/d1 0 
+None1
+mkdir /tmp_dir_16/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_16/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_16/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_16/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_16/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_16/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_16/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_16/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_16/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_16/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_16/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_16/d1/nonempty_dir2/d2/f3.txt
+None1
+mkdir /tmp_dir_17/ 0 
+None1
+mkdir /tmp_dir_17/d1 0 
+None1
+mkdir /tmp_dir_17/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_17/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_17/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_17/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_17/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_17/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_17/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_17/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_17/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_17/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_17/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_17/d1/nonempty_dir2/d2/f4.txt
+None1
+mkdir /tmp_dir_18/ 0 
+None1
+mkdir /tmp_dir_18/d1 0 
+None1
+mkdir /tmp_dir_18/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_18/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_18/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_18/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_18/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_18/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_18/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_18/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_18/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_18/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_18/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_18/d1/nonempty_dir2/d2/d3
+[EISDIR]
+mkdir /tmp_dir_19/ 0 
+None1
+mkdir /tmp_dir_19/d1 0 
+None1
+mkdir /tmp_dir_19/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_19/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_19/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_19/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_19/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_19/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_19/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_19/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_19/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_19/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_19/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_19/d1/nonempty_dir2/d2/d4
+[EISDIR]
+mkdir /tmp_dir_20/ 0 
+None1
+mkdir /tmp_dir_20/d1 0 
+None1
+mkdir /tmp_dir_20/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_20/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_20/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_20/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_20/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_20/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_20/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_20/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_20/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_20/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_20/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_20/
+[EISDIR]
+mkdir /tmp_dir_21/ 0 
+None1
+mkdir /tmp_dir_21/d1 0 
+None1
+mkdir /tmp_dir_21/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_21/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_21/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_21/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_21/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_21/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_21/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_21/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_21/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_21/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_21/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_21/d1/
+[EISDIR]
+mkdir /tmp_dir_22/ 0 
+None1
+mkdir /tmp_dir_22/d1 0 
+None1
+mkdir /tmp_dir_22/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_22/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_22/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_22/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_22/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_22/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_22/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_22/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_22/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_22/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_22/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_22/d1/empty_dir1/
+[EISDIR]
+mkdir /tmp_dir_23/ 0 
+None1
+mkdir /tmp_dir_23/d1 0 
+None1
+mkdir /tmp_dir_23/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_23/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_23/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_23/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_23/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_23/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_23/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_23/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_23/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_23/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_23/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_23/d1/empty_dir2/
+[EISDIR]
+mkdir /tmp_dir_24/ 0 
+None1
+mkdir /tmp_dir_24/d1 0 
+None1
+mkdir /tmp_dir_24/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_24/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_24/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_24/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_24/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_24/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_24/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_24/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_24/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_24/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_24/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_24/d1/nonempty_dir1/
+[EISDIR]
+mkdir /tmp_dir_25/ 0 
+None1
+mkdir /tmp_dir_25/d1 0 
+None1
+mkdir /tmp_dir_25/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_25/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_25/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_25/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_25/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_25/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_25/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_25/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_25/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_25/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_25/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_25/d1/nonempty_dir1/f1.txt/
+[ENOTDIR]
+mkdir /tmp_dir_26/ 0 
+None1
+mkdir /tmp_dir_26/d1 0 
+None1
+mkdir /tmp_dir_26/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_26/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_26/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_26/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_26/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_26/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_26/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_26/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_26/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_26/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_26/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_26/d1/nonempty_dir1/f2.txt/
+[ENOTDIR]
+mkdir /tmp_dir_27/ 0 
+None1
+mkdir /tmp_dir_27/d1 0 
+None1
+mkdir /tmp_dir_27/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_27/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_27/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_27/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_27/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_27/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_27/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_27/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_27/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_27/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_27/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_27/d1/nonempty_dir1/d2/
+[EISDIR]
+mkdir /tmp_dir_28/ 0 
+None1
+mkdir /tmp_dir_28/d1 0 
+None1
+mkdir /tmp_dir_28/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_28/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_28/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_28/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_28/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_28/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_28/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_28/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_28/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_28/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_28/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_28/d1/nonempty_dir1/d2/f3.txt/
+[ENOTDIR]
+mkdir /tmp_dir_29/ 0 
+None1
+mkdir /tmp_dir_29/d1 0 
+None1
+mkdir /tmp_dir_29/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_29/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_29/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_29/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_29/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_29/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_29/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_29/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_29/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_29/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_29/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_29/d1/nonempty_dir1/d2/f4.txt/
+[ENOTDIR]
+mkdir /tmp_dir_30/ 0 
+None1
+mkdir /tmp_dir_30/d1 0 
+None1
+mkdir /tmp_dir_30/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_30/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_30/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_30/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_30/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_30/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_30/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_30/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_30/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_30/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_30/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_30/d1/nonempty_dir1/d2/d3/
+[EISDIR]
+mkdir /tmp_dir_31/ 0 
+None1
+mkdir /tmp_dir_31/d1 0 
+None1
+mkdir /tmp_dir_31/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_31/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_31/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_31/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_31/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_31/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_31/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_31/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_31/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_31/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_31/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_31/d1/nonempty_dir1/d2/d4/
+[EISDIR]
+mkdir /tmp_dir_32/ 0 
+None1
+mkdir /tmp_dir_32/d1 0 
+None1
+mkdir /tmp_dir_32/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_32/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_32/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_32/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_32/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_32/d1/nonempty_dir2/
+[EISDIR]
+mkdir /tmp_dir_33/ 0 
+None1
+mkdir /tmp_dir_33/d1 0 
+None1
+mkdir /tmp_dir_33/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_33/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_33/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_33/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_33/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_33/d1/nonempty_dir2/f1.txt/
+[ENOTDIR]
+mkdir /tmp_dir_34/ 0 
+None1
+mkdir /tmp_dir_34/d1 0 
+None1
+mkdir /tmp_dir_34/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_34/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_34/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_34/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_34/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_34/d1/nonempty_dir2/f2.txt/
+[ENOTDIR]
+mkdir /tmp_dir_35/ 0 
+None1
+mkdir /tmp_dir_35/d1 0 
+None1
+mkdir /tmp_dir_35/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_35/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_35/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_35/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_35/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_35/d1/nonempty_dir2/d2/
+[EISDIR]
+mkdir /tmp_dir_36/ 0 
+None1
+mkdir /tmp_dir_36/d1 0 
+None1
+mkdir /tmp_dir_36/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_36/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_36/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_36/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_36/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_36/d1/nonempty_dir2/d2/f3.txt/
+[ENOTDIR]
+mkdir /tmp_dir_37/ 0 
+None1
+mkdir /tmp_dir_37/d1 0 
+None1
+mkdir /tmp_dir_37/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_37/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_37/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_37/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_37/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_37/d1/nonempty_dir2/d2/f4.txt/
+[ENOTDIR]
+mkdir /tmp_dir_38/ 0 
+None1
+mkdir /tmp_dir_38/d1 0 
+None1
+mkdir /tmp_dir_38/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_38/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_38/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_38/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_38/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_38/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_38/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_38/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_38/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_38/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_38/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_38/d1/nonempty_dir2/d2/d3/
+[EISDIR]
+mkdir /tmp_dir_39/ 0 
+None1
+mkdir /tmp_dir_39/d1 0 
+None1
+mkdir /tmp_dir_39/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_39/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_39/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_39/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_39/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_39/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_39/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_39/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_39/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_39/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_39/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_39/d1/nonempty_dir2/d2/d4/
+[EISDIR]
+mkdir /tmp_dir_40/ 0 
+None1
+mkdir /tmp_dir_40/d1 0 
+None1
+mkdir /tmp_dir_40/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_40/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_40/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_40/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_40/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_40/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_40/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_40/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_40/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_40/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_40/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_40/d1/nonexist_dir1
+[ENOENT]
+mkdir /tmp_dir_41/ 0 
+None1
+mkdir /tmp_dir_41/d1 0 
+None1
+mkdir /tmp_dir_41/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_41/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_41/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_41/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_41/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_41/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_41/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_41/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_41/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_41/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_41/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_41/d1/nonexist_dir2
+[ENOENT]
+mkdir /tmp_dir_42/ 0 
+None1
+mkdir /tmp_dir_42/d1 0 
+None1
+mkdir /tmp_dir_42/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_42/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_42/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_42/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_42/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_42/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_42/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_42/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_42/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_42/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_42/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_42/d1/nonexist_file1
+[ENOENT]
+mkdir /tmp_dir_43/ 0 
+None1
+mkdir /tmp_dir_43/d1 0 
+None1
+mkdir /tmp_dir_43/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_43/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_43/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_43/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_43/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_43/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_43/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_43/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_43/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_43/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_43/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_43/d1/nonexist_file2
+[ENOENT]
+mkdir /tmp_dir_44/ 0 
+None1
+mkdir /tmp_dir_44/d1 0 
+None1
+mkdir /tmp_dir_44/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_44/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_44/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_44/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_44/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_44/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_44/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_44/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_44/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_44/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_44/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_44/d1/nonexist_dir1/nonexist_dir3
+[ENOENT]
+mkdir /tmp_dir_45/ 0 
+None1
+mkdir /tmp_dir_45/d1 0 
+None1
+mkdir /tmp_dir_45/d1/empty_dir1 0 
+None1
+mkdir /tmp_dir_45/d1/empty_dir2 0 
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir1 0 
+None1
+open /tmp_dir_45/d1/nonempty_dir1/f1.txt [O_CREAT]
+None1
+open /tmp_dir_45/d1/nonempty_dir1/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir1/d2 0 
+None1
+open /tmp_dir_45/d1/nonempty_dir1/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_45/d1/nonempty_dir1/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir1/d2/d3 0 
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir1/d2/d4 0 
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir2 0 
+None1
+open /tmp_dir_45/d1/nonempty_dir2/f1.txt [O_CREAT]
+None1
+open /tmp_dir_45/d1/nonempty_dir2/f2.txt [O_CREAT]
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir2/d2 0 
+None1
+open /tmp_dir_45/d1/nonempty_dir2/d2/f3.txt [O_CREAT]
+None1
+open /tmp_dir_45/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir2/d2/d3 0 
+None1
+mkdir /tmp_dir_45/d1/nonempty_dir2/d2/d4 0 
+None1
+unlink /tmp_dir_45/d1/nonexist_dir1/nonexist_file3
+[ENOENT]
+dumpfs
+/tmp_dir_0|D
+/tmp_dir_1|D
+/tmp_dir_10|D
+/tmp_dir_11|D
+/tmp_dir_12|D
+/tmp_dir_13|D
+/tmp_dir_14|D
+/tmp_dir_15|D
+/tmp_dir_16|D
+/tmp_dir_17|D
+/tmp_dir_18|D
+/tmp_dir_19|D
+/tmp_dir_2|D
+/tmp_dir_20|D
+/tmp_dir_21|D
+/tmp_dir_22|D
+/tmp_dir_23|D
+/tmp_dir_24|D
+/tmp_dir_25|D
+/tmp_dir_26|D
+/tmp_dir_27|D
+/tmp_dir_28|D
+/tmp_dir_29|D
+/tmp_dir_3|D
+/tmp_dir_30|D
+/tmp_dir_31|D
+/tmp_dir_32|D
+/tmp_dir_33|D
+/tmp_dir_34|D
+/tmp_dir_35|D
+/tmp_dir_36|D
+/tmp_dir_37|D
+/tmp_dir_38|D
+/tmp_dir_39|D
+/tmp_dir_4|D
+/tmp_dir_40|D
+/tmp_dir_41|D
+/tmp_dir_42|D
+/tmp_dir_43|D
+/tmp_dir_44|D
+/tmp_dir_45|D
+/tmp_dir_5|D
+/tmp_dir_6|D
+/tmp_dir_7|D
+/tmp_dir_8|D
+/tmp_dir_9|D
+/tmp_dir_0/d1|D
+/tmp_dir_0/d1/empty_dir1|D
+/tmp_dir_0/d1/empty_dir2|D
+/tmp_dir_0/d1/nonempty_dir1|D
+/tmp_dir_0/d1/nonempty_dir2|D
+/tmp_dir_0/d1/nonempty_dir1/d2|D
+/tmp_dir_0/d1/nonempty_dir1/f1.txt|F|1|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir1/f2.txt|F|2|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_0/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_0/d1/nonempty_dir1/d2/f3.txt|F|3|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir1/d2/f4.txt|F|4|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir2/d2|D
+/tmp_dir_0/d1/nonempty_dir2/f1.txt|F|5|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir2/f2.txt|F|6|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_0/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_0/d1/nonempty_dir2/d2/f3.txt|F|7|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_0/d1/nonempty_dir2/d2/f4.txt|F|8|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1|D
+/tmp_dir_1/d1/empty_dir1|D
+/tmp_dir_1/d1/empty_dir2|D
+/tmp_dir_1/d1/nonempty_dir1|D
+/tmp_dir_1/d1/nonempty_dir2|D
+/tmp_dir_1/d1/nonempty_dir1/d2|D
+/tmp_dir_1/d1/nonempty_dir1/f1.txt|F|9|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir1/f2.txt|F|10|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_1/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_1/d1/nonempty_dir1/d2/f3.txt|F|11|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir1/d2/f4.txt|F|12|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir2/d2|D
+/tmp_dir_1/d1/nonempty_dir2/f1.txt|F|13|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir2/f2.txt|F|14|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_1/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_1/d1/nonempty_dir2/d2/f3.txt|F|15|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_1/d1/nonempty_dir2/d2/f4.txt|F|16|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1|D
+/tmp_dir_10/d1/empty_dir1|D
+/tmp_dir_10/d1/empty_dir2|D
+/tmp_dir_10/d1/nonempty_dir1|D
+/tmp_dir_10/d1/nonempty_dir2|D
+/tmp_dir_10/d1/nonempty_dir1/d2|D
+/tmp_dir_10/d1/nonempty_dir1/f1.txt|F|17|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir1/f2.txt|F|18|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_10/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_10/d1/nonempty_dir1/d2/f3.txt|F|19|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir1/d2/f4.txt|F|20|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir2/d2|D
+/tmp_dir_10/d1/nonempty_dir2/f1.txt|F|21|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir2/f2.txt|F|22|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_10/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_10/d1/nonempty_dir2/d2/f3.txt|F|23|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_10/d1/nonempty_dir2/d2/f4.txt|F|24|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1|D
+/tmp_dir_11/d1/empty_dir1|D
+/tmp_dir_11/d1/empty_dir2|D
+/tmp_dir_11/d1/nonempty_dir1|D
+/tmp_dir_11/d1/nonempty_dir2|D
+/tmp_dir_11/d1/nonempty_dir1/d2|D
+/tmp_dir_11/d1/nonempty_dir1/f1.txt|F|25|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir1/f2.txt|F|26|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_11/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_11/d1/nonempty_dir1/d2/f3.txt|F|27|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir1/d2/f4.txt|F|28|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir2/d2|D
+/tmp_dir_11/d1/nonempty_dir2/f1.txt|F|29|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir2/f2.txt|F|30|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_11/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_11/d1/nonempty_dir2/d2/f3.txt|F|31|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_11/d1/nonempty_dir2/d2/f4.txt|F|32|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1|D
+/tmp_dir_12/d1/empty_dir1|D
+/tmp_dir_12/d1/empty_dir2|D
+/tmp_dir_12/d1/nonempty_dir1|D
+/tmp_dir_12/d1/nonempty_dir2|D
+/tmp_dir_12/d1/nonempty_dir1/d2|D
+/tmp_dir_12/d1/nonempty_dir1/f1.txt|F|33|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir1/f2.txt|F|34|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_12/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_12/d1/nonempty_dir1/d2/f3.txt|F|35|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir1/d2/f4.txt|F|36|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir2/d2|D
+/tmp_dir_12/d1/nonempty_dir2/f1.txt|F|37|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir2/f2.txt|F|38|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_12/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_12/d1/nonempty_dir2/d2/f3.txt|F|39|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_12/d1/nonempty_dir2/d2/f4.txt|F|40|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1|D
+/tmp_dir_13/d1/empty_dir1|D
+/tmp_dir_13/d1/empty_dir2|D
+/tmp_dir_13/d1/nonempty_dir1|D
+/tmp_dir_13/d1/nonempty_dir2|D
+/tmp_dir_13/d1/nonempty_dir1/d2|D
+/tmp_dir_13/d1/nonempty_dir1/f1.txt|F|41|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir1/f2.txt|F|42|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_13/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_13/d1/nonempty_dir1/d2/f3.txt|F|43|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir1/d2/f4.txt|F|44|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir2/d2|D
+/tmp_dir_13/d1/nonempty_dir2/f2.txt|F|45|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_13/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_13/d1/nonempty_dir2/d2/f3.txt|F|46|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_13/d1/nonempty_dir2/d2/f4.txt|F|47|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1|D
+/tmp_dir_14/d1/empty_dir1|D
+/tmp_dir_14/d1/empty_dir2|D
+/tmp_dir_14/d1/nonempty_dir1|D
+/tmp_dir_14/d1/nonempty_dir2|D
+/tmp_dir_14/d1/nonempty_dir1/d2|D
+/tmp_dir_14/d1/nonempty_dir1/f1.txt|F|48|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir1/f2.txt|F|49|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_14/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_14/d1/nonempty_dir1/d2/f3.txt|F|50|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir1/d2/f4.txt|F|51|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir2/d2|D
+/tmp_dir_14/d1/nonempty_dir2/f1.txt|F|52|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_14/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_14/d1/nonempty_dir2/d2/f3.txt|F|53|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_14/d1/nonempty_dir2/d2/f4.txt|F|54|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1|D
+/tmp_dir_15/d1/empty_dir1|D
+/tmp_dir_15/d1/empty_dir2|D
+/tmp_dir_15/d1/nonempty_dir1|D
+/tmp_dir_15/d1/nonempty_dir2|D
+/tmp_dir_15/d1/nonempty_dir1/d2|D
+/tmp_dir_15/d1/nonempty_dir1/f1.txt|F|55|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir1/f2.txt|F|56|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_15/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_15/d1/nonempty_dir1/d2/f3.txt|F|57|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir1/d2/f4.txt|F|58|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir2/d2|D
+/tmp_dir_15/d1/nonempty_dir2/f1.txt|F|59|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir2/f2.txt|F|60|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_15/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_15/d1/nonempty_dir2/d2/f3.txt|F|61|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_15/d1/nonempty_dir2/d2/f4.txt|F|62|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1|D
+/tmp_dir_16/d1/empty_dir1|D
+/tmp_dir_16/d1/empty_dir2|D
+/tmp_dir_16/d1/nonempty_dir1|D
+/tmp_dir_16/d1/nonempty_dir2|D
+/tmp_dir_16/d1/nonempty_dir1/d2|D
+/tmp_dir_16/d1/nonempty_dir1/f1.txt|F|63|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir1/f2.txt|F|64|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_16/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_16/d1/nonempty_dir1/d2/f3.txt|F|65|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir1/d2/f4.txt|F|66|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir2/d2|D
+/tmp_dir_16/d1/nonempty_dir2/f1.txt|F|67|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir2/f2.txt|F|68|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_16/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_16/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_16/d1/nonempty_dir2/d2/f4.txt|F|69|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1|D
+/tmp_dir_17/d1/empty_dir1|D
+/tmp_dir_17/d1/empty_dir2|D
+/tmp_dir_17/d1/nonempty_dir1|D
+/tmp_dir_17/d1/nonempty_dir2|D
+/tmp_dir_17/d1/nonempty_dir1/d2|D
+/tmp_dir_17/d1/nonempty_dir1/f1.txt|F|70|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir1/f2.txt|F|71|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_17/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_17/d1/nonempty_dir1/d2/f3.txt|F|72|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir1/d2/f4.txt|F|73|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir2/d2|D
+/tmp_dir_17/d1/nonempty_dir2/f1.txt|F|74|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir2/f2.txt|F|75|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_17/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_17/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_17/d1/nonempty_dir2/d2/f3.txt|F|76|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1|D
+/tmp_dir_18/d1/empty_dir1|D
+/tmp_dir_18/d1/empty_dir2|D
+/tmp_dir_18/d1/nonempty_dir1|D
+/tmp_dir_18/d1/nonempty_dir2|D
+/tmp_dir_18/d1/nonempty_dir1/d2|D
+/tmp_dir_18/d1/nonempty_dir1/f1.txt|F|77|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir1/f2.txt|F|78|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_18/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_18/d1/nonempty_dir1/d2/f3.txt|F|79|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir1/d2/f4.txt|F|80|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir2/d2|D
+/tmp_dir_18/d1/nonempty_dir2/f1.txt|F|81|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir2/f2.txt|F|82|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_18/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_18/d1/nonempty_dir2/d2/f3.txt|F|83|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_18/d1/nonempty_dir2/d2/f4.txt|F|84|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1|D
+/tmp_dir_19/d1/empty_dir1|D
+/tmp_dir_19/d1/empty_dir2|D
+/tmp_dir_19/d1/nonempty_dir1|D
+/tmp_dir_19/d1/nonempty_dir2|D
+/tmp_dir_19/d1/nonempty_dir1/d2|D
+/tmp_dir_19/d1/nonempty_dir1/f1.txt|F|85|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir1/f2.txt|F|86|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_19/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_19/d1/nonempty_dir1/d2/f3.txt|F|87|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir1/d2/f4.txt|F|88|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir2/d2|D
+/tmp_dir_19/d1/nonempty_dir2/f1.txt|F|89|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir2/f2.txt|F|90|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_19/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_19/d1/nonempty_dir2/d2/f3.txt|F|91|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_19/d1/nonempty_dir2/d2/f4.txt|F|92|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1|D
+/tmp_dir_2/d1/empty_dir1|D
+/tmp_dir_2/d1/empty_dir2|D
+/tmp_dir_2/d1/nonempty_dir1|D
+/tmp_dir_2/d1/nonempty_dir2|D
+/tmp_dir_2/d1/nonempty_dir1/d2|D
+/tmp_dir_2/d1/nonempty_dir1/f1.txt|F|93|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir1/f2.txt|F|94|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_2/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_2/d1/nonempty_dir1/d2/f3.txt|F|95|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir1/d2/f4.txt|F|96|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir2/d2|D
+/tmp_dir_2/d1/nonempty_dir2/f1.txt|F|97|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir2/f2.txt|F|98|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_2/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_2/d1/nonempty_dir2/d2/f3.txt|F|99|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_2/d1/nonempty_dir2/d2/f4.txt|F|100|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1|D
+/tmp_dir_20/d1/empty_dir1|D
+/tmp_dir_20/d1/empty_dir2|D
+/tmp_dir_20/d1/nonempty_dir1|D
+/tmp_dir_20/d1/nonempty_dir2|D
+/tmp_dir_20/d1/nonempty_dir1/d2|D
+/tmp_dir_20/d1/nonempty_dir1/f1.txt|F|101|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir1/f2.txt|F|102|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_20/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_20/d1/nonempty_dir1/d2/f3.txt|F|103|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir1/d2/f4.txt|F|104|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir2/d2|D
+/tmp_dir_20/d1/nonempty_dir2/f1.txt|F|105|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir2/f2.txt|F|106|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_20/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_20/d1/nonempty_dir2/d2/f3.txt|F|107|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_20/d1/nonempty_dir2/d2/f4.txt|F|108|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1|D
+/tmp_dir_21/d1/empty_dir1|D
+/tmp_dir_21/d1/empty_dir2|D
+/tmp_dir_21/d1/nonempty_dir1|D
+/tmp_dir_21/d1/nonempty_dir2|D
+/tmp_dir_21/d1/nonempty_dir1/d2|D
+/tmp_dir_21/d1/nonempty_dir1/f1.txt|F|109|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir1/f2.txt|F|110|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_21/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_21/d1/nonempty_dir1/d2/f3.txt|F|111|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir1/d2/f4.txt|F|112|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir2/d2|D
+/tmp_dir_21/d1/nonempty_dir2/f1.txt|F|113|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir2/f2.txt|F|114|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_21/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_21/d1/nonempty_dir2/d2/f3.txt|F|115|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_21/d1/nonempty_dir2/d2/f4.txt|F|116|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1|D
+/tmp_dir_22/d1/empty_dir1|D
+/tmp_dir_22/d1/empty_dir2|D
+/tmp_dir_22/d1/nonempty_dir1|D
+/tmp_dir_22/d1/nonempty_dir2|D
+/tmp_dir_22/d1/nonempty_dir1/d2|D
+/tmp_dir_22/d1/nonempty_dir1/f1.txt|F|117|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir1/f2.txt|F|118|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_22/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_22/d1/nonempty_dir1/d2/f3.txt|F|119|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir1/d2/f4.txt|F|120|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir2/d2|D
+/tmp_dir_22/d1/nonempty_dir2/f1.txt|F|121|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir2/f2.txt|F|122|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_22/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_22/d1/nonempty_dir2/d2/f3.txt|F|123|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_22/d1/nonempty_dir2/d2/f4.txt|F|124|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1|D
+/tmp_dir_23/d1/empty_dir1|D
+/tmp_dir_23/d1/empty_dir2|D
+/tmp_dir_23/d1/nonempty_dir1|D
+/tmp_dir_23/d1/nonempty_dir2|D
+/tmp_dir_23/d1/nonempty_dir1/d2|D
+/tmp_dir_23/d1/nonempty_dir1/f1.txt|F|125|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir1/f2.txt|F|126|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_23/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_23/d1/nonempty_dir1/d2/f3.txt|F|127|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir1/d2/f4.txt|F|128|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir2/d2|D
+/tmp_dir_23/d1/nonempty_dir2/f1.txt|F|129|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir2/f2.txt|F|130|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_23/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_23/d1/nonempty_dir2/d2/f3.txt|F|131|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_23/d1/nonempty_dir2/d2/f4.txt|F|132|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1|D
+/tmp_dir_24/d1/empty_dir1|D
+/tmp_dir_24/d1/empty_dir2|D
+/tmp_dir_24/d1/nonempty_dir1|D
+/tmp_dir_24/d1/nonempty_dir2|D
+/tmp_dir_24/d1/nonempty_dir1/d2|D
+/tmp_dir_24/d1/nonempty_dir1/f1.txt|F|133|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir1/f2.txt|F|134|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_24/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_24/d1/nonempty_dir1/d2/f3.txt|F|135|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir1/d2/f4.txt|F|136|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir2/d2|D
+/tmp_dir_24/d1/nonempty_dir2/f1.txt|F|137|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir2/f2.txt|F|138|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_24/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_24/d1/nonempty_dir2/d2/f3.txt|F|139|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_24/d1/nonempty_dir2/d2/f4.txt|F|140|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1|D
+/tmp_dir_25/d1/empty_dir1|D
+/tmp_dir_25/d1/empty_dir2|D
+/tmp_dir_25/d1/nonempty_dir1|D
+/tmp_dir_25/d1/nonempty_dir2|D
+/tmp_dir_25/d1/nonempty_dir1/d2|D
+/tmp_dir_25/d1/nonempty_dir1/f1.txt|F|141|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir1/f2.txt|F|142|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_25/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_25/d1/nonempty_dir1/d2/f3.txt|F|143|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir1/d2/f4.txt|F|144|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir2/d2|D
+/tmp_dir_25/d1/nonempty_dir2/f1.txt|F|145|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir2/f2.txt|F|146|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_25/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_25/d1/nonempty_dir2/d2/f3.txt|F|147|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_25/d1/nonempty_dir2/d2/f4.txt|F|148|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1|D
+/tmp_dir_26/d1/empty_dir1|D
+/tmp_dir_26/d1/empty_dir2|D
+/tmp_dir_26/d1/nonempty_dir1|D
+/tmp_dir_26/d1/nonempty_dir2|D
+/tmp_dir_26/d1/nonempty_dir1/d2|D
+/tmp_dir_26/d1/nonempty_dir1/f1.txt|F|149|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir1/f2.txt|F|150|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_26/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_26/d1/nonempty_dir1/d2/f3.txt|F|151|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir1/d2/f4.txt|F|152|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir2/d2|D
+/tmp_dir_26/d1/nonempty_dir2/f1.txt|F|153|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir2/f2.txt|F|154|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_26/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_26/d1/nonempty_dir2/d2/f3.txt|F|155|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_26/d1/nonempty_dir2/d2/f4.txt|F|156|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1|D
+/tmp_dir_27/d1/empty_dir1|D
+/tmp_dir_27/d1/empty_dir2|D
+/tmp_dir_27/d1/nonempty_dir1|D
+/tmp_dir_27/d1/nonempty_dir2|D
+/tmp_dir_27/d1/nonempty_dir1/d2|D
+/tmp_dir_27/d1/nonempty_dir1/f1.txt|F|157|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir1/f2.txt|F|158|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_27/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_27/d1/nonempty_dir1/d2/f3.txt|F|159|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir1/d2/f4.txt|F|160|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir2/d2|D
+/tmp_dir_27/d1/nonempty_dir2/f1.txt|F|161|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir2/f2.txt|F|162|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_27/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_27/d1/nonempty_dir2/d2/f3.txt|F|163|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_27/d1/nonempty_dir2/d2/f4.txt|F|164|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1|D
+/tmp_dir_28/d1/empty_dir1|D
+/tmp_dir_28/d1/empty_dir2|D
+/tmp_dir_28/d1/nonempty_dir1|D
+/tmp_dir_28/d1/nonempty_dir2|D
+/tmp_dir_28/d1/nonempty_dir1/d2|D
+/tmp_dir_28/d1/nonempty_dir1/f1.txt|F|165|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir1/f2.txt|F|166|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_28/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_28/d1/nonempty_dir1/d2/f3.txt|F|167|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir1/d2/f4.txt|F|168|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir2/d2|D
+/tmp_dir_28/d1/nonempty_dir2/f1.txt|F|169|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir2/f2.txt|F|170|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_28/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_28/d1/nonempty_dir2/d2/f3.txt|F|171|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_28/d1/nonempty_dir2/d2/f4.txt|F|172|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1|D
+/tmp_dir_29/d1/empty_dir1|D
+/tmp_dir_29/d1/empty_dir2|D
+/tmp_dir_29/d1/nonempty_dir1|D
+/tmp_dir_29/d1/nonempty_dir2|D
+/tmp_dir_29/d1/nonempty_dir1/d2|D
+/tmp_dir_29/d1/nonempty_dir1/f1.txt|F|173|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir1/f2.txt|F|174|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_29/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_29/d1/nonempty_dir1/d2/f3.txt|F|175|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir1/d2/f4.txt|F|176|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir2/d2|D
+/tmp_dir_29/d1/nonempty_dir2/f1.txt|F|177|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir2/f2.txt|F|178|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_29/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_29/d1/nonempty_dir2/d2/f3.txt|F|179|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_29/d1/nonempty_dir2/d2/f4.txt|F|180|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1|D
+/tmp_dir_3/d1/empty_dir1|D
+/tmp_dir_3/d1/empty_dir2|D
+/tmp_dir_3/d1/nonempty_dir1|D
+/tmp_dir_3/d1/nonempty_dir2|D
+/tmp_dir_3/d1/nonempty_dir1/d2|D
+/tmp_dir_3/d1/nonempty_dir1/f1.txt|F|181|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir1/f2.txt|F|182|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_3/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_3/d1/nonempty_dir1/d2/f3.txt|F|183|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir1/d2/f4.txt|F|184|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir2/d2|D
+/tmp_dir_3/d1/nonempty_dir2/f1.txt|F|185|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir2/f2.txt|F|186|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_3/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_3/d1/nonempty_dir2/d2/f3.txt|F|187|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_3/d1/nonempty_dir2/d2/f4.txt|F|188|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1|D
+/tmp_dir_30/d1/empty_dir1|D
+/tmp_dir_30/d1/empty_dir2|D
+/tmp_dir_30/d1/nonempty_dir1|D
+/tmp_dir_30/d1/nonempty_dir2|D
+/tmp_dir_30/d1/nonempty_dir1/d2|D
+/tmp_dir_30/d1/nonempty_dir1/f1.txt|F|189|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir1/f2.txt|F|190|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_30/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_30/d1/nonempty_dir1/d2/f3.txt|F|191|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir1/d2/f4.txt|F|192|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir2/d2|D
+/tmp_dir_30/d1/nonempty_dir2/f1.txt|F|193|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir2/f2.txt|F|194|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_30/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_30/d1/nonempty_dir2/d2/f3.txt|F|195|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_30/d1/nonempty_dir2/d2/f4.txt|F|196|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1|D
+/tmp_dir_31/d1/empty_dir1|D
+/tmp_dir_31/d1/empty_dir2|D
+/tmp_dir_31/d1/nonempty_dir1|D
+/tmp_dir_31/d1/nonempty_dir2|D
+/tmp_dir_31/d1/nonempty_dir1/d2|D
+/tmp_dir_31/d1/nonempty_dir1/f1.txt|F|197|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir1/f2.txt|F|198|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_31/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_31/d1/nonempty_dir1/d2/f3.txt|F|199|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir1/d2/f4.txt|F|200|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir2/d2|D
+/tmp_dir_31/d1/nonempty_dir2/f1.txt|F|201|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir2/f2.txt|F|202|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_31/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_31/d1/nonempty_dir2/d2/f3.txt|F|203|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_31/d1/nonempty_dir2/d2/f4.txt|F|204|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1|D
+/tmp_dir_32/d1/empty_dir1|D
+/tmp_dir_32/d1/empty_dir2|D
+/tmp_dir_32/d1/nonempty_dir1|D
+/tmp_dir_32/d1/nonempty_dir2|D
+/tmp_dir_32/d1/nonempty_dir1/d2|D
+/tmp_dir_32/d1/nonempty_dir1/f1.txt|F|205|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir1/f2.txt|F|206|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_32/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_32/d1/nonempty_dir1/d2/f3.txt|F|207|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir1/d2/f4.txt|F|208|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir2/d2|D
+/tmp_dir_32/d1/nonempty_dir2/f1.txt|F|209|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir2/f2.txt|F|210|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_32/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_32/d1/nonempty_dir2/d2/f3.txt|F|211|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_32/d1/nonempty_dir2/d2/f4.txt|F|212|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1|D
+/tmp_dir_33/d1/empty_dir1|D
+/tmp_dir_33/d1/empty_dir2|D
+/tmp_dir_33/d1/nonempty_dir1|D
+/tmp_dir_33/d1/nonempty_dir2|D
+/tmp_dir_33/d1/nonempty_dir1/d2|D
+/tmp_dir_33/d1/nonempty_dir1/f1.txt|F|213|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir1/f2.txt|F|214|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_33/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_33/d1/nonempty_dir1/d2/f3.txt|F|215|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir1/d2/f4.txt|F|216|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir2/d2|D
+/tmp_dir_33/d1/nonempty_dir2/f1.txt|F|217|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir2/f2.txt|F|218|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_33/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_33/d1/nonempty_dir2/d2/f3.txt|F|219|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_33/d1/nonempty_dir2/d2/f4.txt|F|220|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1|D
+/tmp_dir_34/d1/empty_dir1|D
+/tmp_dir_34/d1/empty_dir2|D
+/tmp_dir_34/d1/nonempty_dir1|D
+/tmp_dir_34/d1/nonempty_dir2|D
+/tmp_dir_34/d1/nonempty_dir1/d2|D
+/tmp_dir_34/d1/nonempty_dir1/f1.txt|F|221|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir1/f2.txt|F|222|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_34/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_34/d1/nonempty_dir1/d2/f3.txt|F|223|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir1/d2/f4.txt|F|224|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir2/d2|D
+/tmp_dir_34/d1/nonempty_dir2/f1.txt|F|225|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir2/f2.txt|F|226|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_34/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_34/d1/nonempty_dir2/d2/f3.txt|F|227|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_34/d1/nonempty_dir2/d2/f4.txt|F|228|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1|D
+/tmp_dir_35/d1/empty_dir1|D
+/tmp_dir_35/d1/empty_dir2|D
+/tmp_dir_35/d1/nonempty_dir1|D
+/tmp_dir_35/d1/nonempty_dir2|D
+/tmp_dir_35/d1/nonempty_dir1/d2|D
+/tmp_dir_35/d1/nonempty_dir1/f1.txt|F|229|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir1/f2.txt|F|230|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_35/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_35/d1/nonempty_dir1/d2/f3.txt|F|231|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir1/d2/f4.txt|F|232|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir2/d2|D
+/tmp_dir_35/d1/nonempty_dir2/f1.txt|F|233|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir2/f2.txt|F|234|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_35/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_35/d1/nonempty_dir2/d2/f3.txt|F|235|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_35/d1/nonempty_dir2/d2/f4.txt|F|236|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1|D
+/tmp_dir_36/d1/empty_dir1|D
+/tmp_dir_36/d1/empty_dir2|D
+/tmp_dir_36/d1/nonempty_dir1|D
+/tmp_dir_36/d1/nonempty_dir2|D
+/tmp_dir_36/d1/nonempty_dir1/d2|D
+/tmp_dir_36/d1/nonempty_dir1/f1.txt|F|237|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir1/f2.txt|F|238|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_36/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_36/d1/nonempty_dir1/d2/f3.txt|F|239|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir1/d2/f4.txt|F|240|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir2/d2|D
+/tmp_dir_36/d1/nonempty_dir2/f1.txt|F|241|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir2/f2.txt|F|242|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_36/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_36/d1/nonempty_dir2/d2/f3.txt|F|243|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_36/d1/nonempty_dir2/d2/f4.txt|F|244|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1|D
+/tmp_dir_37/d1/empty_dir1|D
+/tmp_dir_37/d1/empty_dir2|D
+/tmp_dir_37/d1/nonempty_dir1|D
+/tmp_dir_37/d1/nonempty_dir2|D
+/tmp_dir_37/d1/nonempty_dir1/d2|D
+/tmp_dir_37/d1/nonempty_dir1/f1.txt|F|245|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir1/f2.txt|F|246|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_37/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_37/d1/nonempty_dir1/d2/f3.txt|F|247|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir1/d2/f4.txt|F|248|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir2/d2|D
+/tmp_dir_37/d1/nonempty_dir2/f1.txt|F|249|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir2/f2.txt|F|250|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_37/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_37/d1/nonempty_dir2/d2/f3.txt|F|251|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_37/d1/nonempty_dir2/d2/f4.txt|F|252|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1|D
+/tmp_dir_38/d1/empty_dir1|D
+/tmp_dir_38/d1/empty_dir2|D
+/tmp_dir_38/d1/nonempty_dir1|D
+/tmp_dir_38/d1/nonempty_dir2|D
+/tmp_dir_38/d1/nonempty_dir1/d2|D
+/tmp_dir_38/d1/nonempty_dir1/f1.txt|F|253|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir1/f2.txt|F|254|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_38/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_38/d1/nonempty_dir1/d2/f3.txt|F|255|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir1/d2/f4.txt|F|256|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir2/d2|D
+/tmp_dir_38/d1/nonempty_dir2/f1.txt|F|257|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir2/f2.txt|F|258|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_38/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_38/d1/nonempty_dir2/d2/f3.txt|F|259|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_38/d1/nonempty_dir2/d2/f4.txt|F|260|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1|D
+/tmp_dir_39/d1/empty_dir1|D
+/tmp_dir_39/d1/empty_dir2|D
+/tmp_dir_39/d1/nonempty_dir1|D
+/tmp_dir_39/d1/nonempty_dir2|D
+/tmp_dir_39/d1/nonempty_dir1/d2|D
+/tmp_dir_39/d1/nonempty_dir1/f1.txt|F|261|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir1/f2.txt|F|262|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_39/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_39/d1/nonempty_dir1/d2/f3.txt|F|263|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir1/d2/f4.txt|F|264|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir2/d2|D
+/tmp_dir_39/d1/nonempty_dir2/f1.txt|F|265|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir2/f2.txt|F|266|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_39/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_39/d1/nonempty_dir2/d2/f3.txt|F|267|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_39/d1/nonempty_dir2/d2/f4.txt|F|268|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1|D
+/tmp_dir_4/d1/empty_dir1|D
+/tmp_dir_4/d1/empty_dir2|D
+/tmp_dir_4/d1/nonempty_dir1|D
+/tmp_dir_4/d1/nonempty_dir2|D
+/tmp_dir_4/d1/nonempty_dir1/d2|D
+/tmp_dir_4/d1/nonempty_dir1/f1.txt|F|269|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir1/f2.txt|F|270|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_4/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_4/d1/nonempty_dir1/d2/f3.txt|F|271|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir1/d2/f4.txt|F|272|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir2/d2|D
+/tmp_dir_4/d1/nonempty_dir2/f1.txt|F|273|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir2/f2.txt|F|274|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_4/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_4/d1/nonempty_dir2/d2/f3.txt|F|275|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_4/d1/nonempty_dir2/d2/f4.txt|F|276|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1|D
+/tmp_dir_40/d1/empty_dir1|D
+/tmp_dir_40/d1/empty_dir2|D
+/tmp_dir_40/d1/nonempty_dir1|D
+/tmp_dir_40/d1/nonempty_dir2|D
+/tmp_dir_40/d1/nonempty_dir1/d2|D
+/tmp_dir_40/d1/nonempty_dir1/f1.txt|F|277|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir1/f2.txt|F|278|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_40/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_40/d1/nonempty_dir1/d2/f3.txt|F|279|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir1/d2/f4.txt|F|280|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir2/d2|D
+/tmp_dir_40/d1/nonempty_dir2/f1.txt|F|281|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir2/f2.txt|F|282|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_40/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_40/d1/nonempty_dir2/d2/f3.txt|F|283|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_40/d1/nonempty_dir2/d2/f4.txt|F|284|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1|D
+/tmp_dir_41/d1/empty_dir1|D
+/tmp_dir_41/d1/empty_dir2|D
+/tmp_dir_41/d1/nonempty_dir1|D
+/tmp_dir_41/d1/nonempty_dir2|D
+/tmp_dir_41/d1/nonempty_dir1/d2|D
+/tmp_dir_41/d1/nonempty_dir1/f1.txt|F|285|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir1/f2.txt|F|286|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_41/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_41/d1/nonempty_dir1/d2/f3.txt|F|287|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir1/d2/f4.txt|F|288|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir2/d2|D
+/tmp_dir_41/d1/nonempty_dir2/f1.txt|F|289|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir2/f2.txt|F|290|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_41/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_41/d1/nonempty_dir2/d2/f3.txt|F|291|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_41/d1/nonempty_dir2/d2/f4.txt|F|292|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1|D
+/tmp_dir_42/d1/empty_dir1|D
+/tmp_dir_42/d1/empty_dir2|D
+/tmp_dir_42/d1/nonempty_dir1|D
+/tmp_dir_42/d1/nonempty_dir2|D
+/tmp_dir_42/d1/nonempty_dir1/d2|D
+/tmp_dir_42/d1/nonempty_dir1/f1.txt|F|293|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir1/f2.txt|F|294|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_42/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_42/d1/nonempty_dir1/d2/f3.txt|F|295|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir1/d2/f4.txt|F|296|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir2/d2|D
+/tmp_dir_42/d1/nonempty_dir2/f1.txt|F|297|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir2/f2.txt|F|298|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_42/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_42/d1/nonempty_dir2/d2/f3.txt|F|299|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_42/d1/nonempty_dir2/d2/f4.txt|F|300|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1|D
+/tmp_dir_43/d1/empty_dir1|D
+/tmp_dir_43/d1/empty_dir2|D
+/tmp_dir_43/d1/nonempty_dir1|D
+/tmp_dir_43/d1/nonempty_dir2|D
+/tmp_dir_43/d1/nonempty_dir1/d2|D
+/tmp_dir_43/d1/nonempty_dir1/f1.txt|F|301|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir1/f2.txt|F|302|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_43/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_43/d1/nonempty_dir1/d2/f3.txt|F|303|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir1/d2/f4.txt|F|304|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir2/d2|D
+/tmp_dir_43/d1/nonempty_dir2/f1.txt|F|305|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir2/f2.txt|F|306|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_43/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_43/d1/nonempty_dir2/d2/f3.txt|F|307|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_43/d1/nonempty_dir2/d2/f4.txt|F|308|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1|D
+/tmp_dir_44/d1/empty_dir1|D
+/tmp_dir_44/d1/empty_dir2|D
+/tmp_dir_44/d1/nonempty_dir1|D
+/tmp_dir_44/d1/nonempty_dir2|D
+/tmp_dir_44/d1/nonempty_dir1/d2|D
+/tmp_dir_44/d1/nonempty_dir1/f1.txt|F|309|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir1/f2.txt|F|310|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_44/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_44/d1/nonempty_dir1/d2/f3.txt|F|311|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir1/d2/f4.txt|F|312|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir2/d2|D
+/tmp_dir_44/d1/nonempty_dir2/f1.txt|F|313|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir2/f2.txt|F|314|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_44/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_44/d1/nonempty_dir2/d2/f3.txt|F|315|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_44/d1/nonempty_dir2/d2/f4.txt|F|316|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1|D
+/tmp_dir_45/d1/empty_dir1|D
+/tmp_dir_45/d1/empty_dir2|D
+/tmp_dir_45/d1/nonempty_dir1|D
+/tmp_dir_45/d1/nonempty_dir2|D
+/tmp_dir_45/d1/nonempty_dir1/d2|D
+/tmp_dir_45/d1/nonempty_dir1/f1.txt|F|317|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir1/f2.txt|F|318|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_45/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_45/d1/nonempty_dir1/d2/f3.txt|F|319|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir1/d2/f4.txt|F|320|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir2/d2|D
+/tmp_dir_45/d1/nonempty_dir2/f1.txt|F|321|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir2/f2.txt|F|322|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_45/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_45/d1/nonempty_dir2/d2/f3.txt|F|323|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_45/d1/nonempty_dir2/d2/f4.txt|F|324|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1|D
+/tmp_dir_5/d1/empty_dir1|D
+/tmp_dir_5/d1/empty_dir2|D
+/tmp_dir_5/d1/nonempty_dir1|D
+/tmp_dir_5/d1/nonempty_dir2|D
+/tmp_dir_5/d1/nonempty_dir1/d2|D
+/tmp_dir_5/d1/nonempty_dir1/f2.txt|F|325|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_5/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_5/d1/nonempty_dir1/d2/f3.txt|F|326|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir1/d2/f4.txt|F|327|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir2/d2|D
+/tmp_dir_5/d1/nonempty_dir2/f1.txt|F|328|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir2/f2.txt|F|329|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_5/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_5/d1/nonempty_dir2/d2/f3.txt|F|330|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_5/d1/nonempty_dir2/d2/f4.txt|F|331|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1|D
+/tmp_dir_6/d1/empty_dir1|D
+/tmp_dir_6/d1/empty_dir2|D
+/tmp_dir_6/d1/nonempty_dir1|D
+/tmp_dir_6/d1/nonempty_dir2|D
+/tmp_dir_6/d1/nonempty_dir1/d2|D
+/tmp_dir_6/d1/nonempty_dir1/f1.txt|F|332|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_6/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_6/d1/nonempty_dir1/d2/f3.txt|F|333|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir1/d2/f4.txt|F|334|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir2/d2|D
+/tmp_dir_6/d1/nonempty_dir2/f1.txt|F|335|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir2/f2.txt|F|336|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_6/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_6/d1/nonempty_dir2/d2/f3.txt|F|337|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_6/d1/nonempty_dir2/d2/f4.txt|F|338|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1|D
+/tmp_dir_7/d1/empty_dir1|D
+/tmp_dir_7/d1/empty_dir2|D
+/tmp_dir_7/d1/nonempty_dir1|D
+/tmp_dir_7/d1/nonempty_dir2|D
+/tmp_dir_7/d1/nonempty_dir1/d2|D
+/tmp_dir_7/d1/nonempty_dir1/f1.txt|F|339|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir1/f2.txt|F|340|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_7/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_7/d1/nonempty_dir1/d2/f3.txt|F|341|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir1/d2/f4.txt|F|342|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir2/d2|D
+/tmp_dir_7/d1/nonempty_dir2/f1.txt|F|343|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir2/f2.txt|F|344|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_7/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_7/d1/nonempty_dir2/d2/f3.txt|F|345|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_7/d1/nonempty_dir2/d2/f4.txt|F|346|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1|D
+/tmp_dir_8/d1/empty_dir1|D
+/tmp_dir_8/d1/empty_dir2|D
+/tmp_dir_8/d1/nonempty_dir1|D
+/tmp_dir_8/d1/nonempty_dir2|D
+/tmp_dir_8/d1/nonempty_dir1/d2|D
+/tmp_dir_8/d1/nonempty_dir1/f1.txt|F|347|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir1/f2.txt|F|348|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_8/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_8/d1/nonempty_dir1/d2/f4.txt|F|349|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir2/d2|D
+/tmp_dir_8/d1/nonempty_dir2/f1.txt|F|350|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir2/f2.txt|F|351|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_8/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_8/d1/nonempty_dir2/d2/f3.txt|F|352|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_8/d1/nonempty_dir2/d2/f4.txt|F|353|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1|D
+/tmp_dir_9/d1/empty_dir1|D
+/tmp_dir_9/d1/empty_dir2|D
+/tmp_dir_9/d1/nonempty_dir1|D
+/tmp_dir_9/d1/nonempty_dir2|D
+/tmp_dir_9/d1/nonempty_dir1/d2|D
+/tmp_dir_9/d1/nonempty_dir1/f1.txt|F|354|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir1/f2.txt|F|355|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir1/d2/d3|D
+/tmp_dir_9/d1/nonempty_dir1/d2/d4|D
+/tmp_dir_9/d1/nonempty_dir1/d2/f3.txt|F|356|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir2/d2|D
+/tmp_dir_9/d1/nonempty_dir2/f1.txt|F|357|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir2/f2.txt|F|358|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir2/d2/d3|D
+/tmp_dir_9/d1/nonempty_dir2/d2/d4|D
+/tmp_dir_9/d1/nonempty_dir2/d2/f3.txt|F|359|da39a3ee5e6b4b0d3255bfef95601890afd80709
+/tmp_dir_9/d1/nonempty_dir2/d2/f4.txt|F|360|da39a3ee5e6b4b0d3255bfef95601890afd80709
+
