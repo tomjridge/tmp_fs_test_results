@@ -5668,3 +5668,4 @@ open /tmp_dir_269/d1/nonempty_dir2/d2/f4.txt [O_CREAT]
 mkdir /tmp_dir_269/d1/nonempty_dir2/d2/d3 0
 mkdir /tmp_dir_269/d1/nonempty_dir2/d2/d4 0
 truncate /tmp_dir_269//d1/nonempty_dir1/f1.txt/nonexist4/ -1024
+dump
