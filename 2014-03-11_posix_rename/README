@@ -1,0 +1,27 @@
+Diff command was:
+
+tr61@pc1177:~/l/fs_test_results/2014-01-21_posix_rename$ /tmp/l/bitbucket/fs/fs_test/testdiff.native posix_test_results ../2014-01-21_interp_rename/with_results >diff.results
+
+Relatively recently various flags were introduced to parameterize the
+spec. At the moment, interp assumes a posix-compliant spec, but
+e.g. there are clauses such as the following that are Linux specific:
+
+(in fs_spec.ml, rename)
+
+      | Dname2 (d0_ref,rp) -> (
+        (if (is_linux_arch ops s0 && ends_with_slash rdst) then 
+          maybe_raise ENOTDIR  (* tr/5 even if empty; arguably a Linux bug? Confirmed non-posix behaviour *)
+        else 
+          do_nothing) 
+        >>= (fun _x_ -> 
+          if ((ops.readdir1 s0 d0_ref).ret2<>Names1[]) then 
+            maybe_raises [ENOTEMPTY;EEXIST]  (* tr/6 ENOTEMPTY:1 *)
+          else 
+            do_nothing)
+        >>= (fun _x_ ->
+          myraise EISDIR)) ))) (* posix/rename EISDIR:1 *)
+
+i.e. Linux sometimes behaves as non-posix. Thus, when comparing posix
+against interp, we should configure interp to assume a Linux machine
+is being compared. So we need to add some machinery to interp to allow
+various flags to be set.
