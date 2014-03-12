@@ -25,9 +25,9 @@ TMP2=$result
 doit interp $cmd
 TMP1=$result
 echo Diffing...
-cmd="$testdiff $TMP2/posix_test_results $TMP1/interp_test_results"
-echo $cmd > _$cmd.diff
-$cmd >>_$cmd.diff
+diffcmd="$testdiff $TMP2/posix_test_results $TMP1/interp_test_results"
+echo $diffcmd > _${cmd}.diff
+$diffcmd >>_${cmd}.diff
 
 exit 0
 
