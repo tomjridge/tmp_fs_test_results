@@ -1,5 +1,6 @@
+# first argument is name of test file
 export OCAMLRUNPARAM="s=8M,l=8M,i=1M"
-cp ../current_tests/rename.tests ./tests
+cp $1 ./tests
 rm -rf /tmp/tmp2
 mkdir /tmp/tmp2
 touch tests.started
