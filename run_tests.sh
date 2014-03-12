@@ -19,7 +19,7 @@ function doit() {
 #     echo $1
 # }
 
-cmd=link
+cmd=rmdir
 doit posix $cmd
 TMP2=$result
 doit interp $cmd
