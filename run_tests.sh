@@ -4,12 +4,12 @@ date=`date +'%F'`
 testdiff=/tmp/l/bitbucket/fs/fs_test/testdiff.native
 
 function doit() {
-  posint=$1
-  cmd=$2
-  testfile=../short_tests/${cmd}.tests
+  local posint=$1
+  local cmd=$2
+  testfile=../current_tests/${cmd}.tests
   TMP=`mktemp -d --tmpdir=. _${date}_${posint}_${cmd}_XXX`
   echo "Running ${posint}_${cmd} tests in $TMP"
-  cp -R ${posint}_${cmd}/* $TMP
+  cp -R ${posint}_template/* $TMP
   (cd $TMP && ./test.sh $testfile)  
   result=$TMP
 }
@@ -19,14 +19,15 @@ function doit() {
 #     echo $1
 # }
 
-doit posix rename
+cmd=link
+doit posix $cmd
 TMP2=$result
-doit interp rename
+doit interp $cmd
 TMP1=$result
 echo Diffing...
 cmd="$testdiff $TMP2/posix_test_results $TMP1/interp_test_results"
-echo $cmd > _rename.diff
-$cmd >>_rename.diff
+echo $cmd > _$cmd.diff
+$cmd >>_$cmd.diff
 
 exit 0
 
