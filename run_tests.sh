@@ -4,10 +4,8 @@
 lbl=$1
 
 date=`date +'%F'`
-testdiff=testdiff.native
+testdiff=src_ext/fs/fs_test/testdiff.native
 
-# override variables if desired e.g. location of testdiff
-source local_config.sh
 
 function doit() {
   local posint=$1
