@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# call this script with the argument for the label to test e.g. ./this_script.sh truncate
+lbl=$1
+
 date=`date +'%F'`
-testdiff=/tmp/l/bitbucket/fs/fs_test/testdiff.native
+testdiff=testdiff.native
+
+# override variables if desired e.g. location of testdiff
+source local_config.sh
 
 function doit() {
   local posint=$1
@@ -19,7 +25,7 @@ function doit() {
 #     echo $1
 # }
 
-cmd=truncate
+cmd=$lbl
 doit posix $cmd
 TMP2=$result
 doit interp $cmd
