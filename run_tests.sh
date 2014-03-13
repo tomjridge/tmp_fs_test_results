@@ -35,6 +35,9 @@ diffcmd="$testdiff $TMP2/posix_test_results $TMP1/interp_test_results"
 echo $diffcmd > _${cmd}.diff
 $diffcmd >>_${cmd}.diff
 
+
+echo "Results are now in files and directories named _.... You may want to rename these (e.g. _truncate.diff to current_diffs/truncate.diff) and add to repo. Alternatively rm -rf _*"
+
 exit 0
 
 
