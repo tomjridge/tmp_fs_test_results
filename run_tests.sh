@@ -34,7 +34,10 @@ echo $diffcmd > _${cmd}.diff
 $diffcmd >>_${cmd}.diff
 
 
-echo "Results are now in files and directories named _.... You may want to rename these (e.g. _truncate.diff to current_diffs/truncate.diff) and add to repo. Alternatively rm -rf _*"
+# as a convenience, copy test results to /tmp
+cp $TMP2/posix_test_results $TMP1/interp_test_results /tmp
+
+echo "Results are now in files and directories named _.... You may want to rename these (e.g. _truncate.diff to current_diffs/truncate.diff) and add to repo. Alternatively rm -rf _*. Result files are copied to /tmp/posix_test_results and /tmp/interp_test_results"
 
 exit 0
 

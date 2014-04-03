@@ -1,0 +1,700 @@
+mkdir /tmp_dir_2000/ 0
+mkdir /tmp_dir_2000/empty_dir 0
+mkdir /tmp_dir_2000/nonempty_dir 0
+open_close /tmp_dir_2000/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2000/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2000/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2000/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2001/ 0
+mkdir /tmp_dir_2001/empty_dir 0
+mkdir /tmp_dir_2001/nonempty_dir 0
+open_close /tmp_dir_2001/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2001/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2001/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2001/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2002/ 0
+mkdir /tmp_dir_2002/empty_dir 0
+mkdir /tmp_dir_2002/nonempty_dir 0
+open_close /tmp_dir_2002/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2002/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2002/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2002/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2003/ 0
+mkdir /tmp_dir_2003/empty_dir 0
+mkdir /tmp_dir_2003/nonempty_dir 0
+open_close /tmp_dir_2003/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2003/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2003/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2003/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2004/ 0
+mkdir /tmp_dir_2004/empty_dir 0
+mkdir /tmp_dir_2004/nonempty_dir 0
+open_close /tmp_dir_2004/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2004/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2004/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2004/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2005/ 0
+mkdir /tmp_dir_2005/empty_dir 0
+mkdir /tmp_dir_2005/nonempty_dir 0
+open_close /tmp_dir_2005/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2005/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2005/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2005/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2006/ 0
+mkdir /tmp_dir_2006/empty_dir 0
+mkdir /tmp_dir_2006/nonempty_dir 0
+open_close /tmp_dir_2006/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2006/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2006/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2006/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2007/ 0
+mkdir /tmp_dir_2007/empty_dir 0
+mkdir /tmp_dir_2007/nonempty_dir 0
+open_close /tmp_dir_2007/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2007/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2007/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2007/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_DIRECTORY] 0
+mkdir /tmp_dir_2008/ 0
+mkdir /tmp_dir_2008/empty_dir 0
+mkdir /tmp_dir_2008/nonempty_dir 0
+open_close /tmp_dir_2008/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2008/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2008/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2008/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2009/ 0
+mkdir /tmp_dir_2009/empty_dir 0
+mkdir /tmp_dir_2009/nonempty_dir 0
+open_close /tmp_dir_2009/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2009/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2009/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2009/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2010/ 0
+mkdir /tmp_dir_2010/empty_dir 0
+mkdir /tmp_dir_2010/nonempty_dir 0
+open_close /tmp_dir_2010/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2010/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2010/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2010/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2011/ 0
+mkdir /tmp_dir_2011/empty_dir 0
+mkdir /tmp_dir_2011/nonempty_dir 0
+open_close /tmp_dir_2011/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2011/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2011/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2011/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_EXCL] 0
+mkdir /tmp_dir_2012/ 0
+mkdir /tmp_dir_2012/empty_dir 0
+mkdir /tmp_dir_2012/nonempty_dir 0
+open_close /tmp_dir_2012/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2012/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2012/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2012/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2013/ 0
+mkdir /tmp_dir_2013/empty_dir 0
+mkdir /tmp_dir_2013/nonempty_dir 0
+open_close /tmp_dir_2013/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2013/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2013/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2013/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_NOFOLLOW] 0
+mkdir /tmp_dir_2014/ 0
+mkdir /tmp_dir_2014/empty_dir 0
+mkdir /tmp_dir_2014/nonempty_dir 0
+open_close /tmp_dir_2014/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2014/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2014/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2014/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC;O_TRUNC] 0
+mkdir /tmp_dir_2015/ 0
+mkdir /tmp_dir_2015/empty_dir 0
+mkdir /tmp_dir_2015/nonempty_dir 0
+open_close /tmp_dir_2015/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2015/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2015/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2015/nonempty_dir/f1.txt [O_EXEC;O_CLOEXEC] 0
+mkdir /tmp_dir_2016/ 0
+mkdir /tmp_dir_2016/empty_dir 0
+mkdir /tmp_dir_2016/nonempty_dir 0
+open_close /tmp_dir_2016/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2016/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2016/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2016/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2017/ 0
+mkdir /tmp_dir_2017/empty_dir 0
+mkdir /tmp_dir_2017/nonempty_dir 0
+open_close /tmp_dir_2017/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2017/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2017/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2017/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2018/ 0
+mkdir /tmp_dir_2018/empty_dir 0
+mkdir /tmp_dir_2018/nonempty_dir 0
+open_close /tmp_dir_2018/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2018/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2018/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2018/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2019/ 0
+mkdir /tmp_dir_2019/empty_dir 0
+mkdir /tmp_dir_2019/nonempty_dir 0
+open_close /tmp_dir_2019/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2019/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2019/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2019/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2020/ 0
+mkdir /tmp_dir_2020/empty_dir 0
+mkdir /tmp_dir_2020/nonempty_dir 0
+open_close /tmp_dir_2020/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2020/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2020/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2020/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2021/ 0
+mkdir /tmp_dir_2021/empty_dir 0
+mkdir /tmp_dir_2021/nonempty_dir 0
+open_close /tmp_dir_2021/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2021/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2021/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2021/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2022/ 0
+mkdir /tmp_dir_2022/empty_dir 0
+mkdir /tmp_dir_2022/nonempty_dir 0
+open_close /tmp_dir_2022/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2022/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2022/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2022/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2023/ 0
+mkdir /tmp_dir_2023/empty_dir 0
+mkdir /tmp_dir_2023/nonempty_dir 0
+open_close /tmp_dir_2023/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2023/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2023/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2023/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_DIRECTORY] 0
+mkdir /tmp_dir_2024/ 0
+mkdir /tmp_dir_2024/empty_dir 0
+mkdir /tmp_dir_2024/nonempty_dir 0
+open_close /tmp_dir_2024/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2024/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2024/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2024/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2025/ 0
+mkdir /tmp_dir_2025/empty_dir 0
+mkdir /tmp_dir_2025/nonempty_dir 0
+open_close /tmp_dir_2025/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2025/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2025/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2025/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2026/ 0
+mkdir /tmp_dir_2026/empty_dir 0
+mkdir /tmp_dir_2026/nonempty_dir 0
+open_close /tmp_dir_2026/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2026/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2026/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2026/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2027/ 0
+mkdir /tmp_dir_2027/empty_dir 0
+mkdir /tmp_dir_2027/nonempty_dir 0
+open_close /tmp_dir_2027/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2027/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2027/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2027/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_EXCL] 0
+mkdir /tmp_dir_2028/ 0
+mkdir /tmp_dir_2028/empty_dir 0
+mkdir /tmp_dir_2028/nonempty_dir 0
+open_close /tmp_dir_2028/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2028/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2028/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2028/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2029/ 0
+mkdir /tmp_dir_2029/empty_dir 0
+mkdir /tmp_dir_2029/nonempty_dir 0
+open_close /tmp_dir_2029/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2029/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2029/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2029/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_NOFOLLOW] 0
+mkdir /tmp_dir_2030/ 0
+mkdir /tmp_dir_2030/empty_dir 0
+mkdir /tmp_dir_2030/nonempty_dir 0
+open_close /tmp_dir_2030/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2030/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2030/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2030/nonempty_dir/f1.txt [O_EXEC;O_CREAT;O_TRUNC] 0
+mkdir /tmp_dir_2031/ 0
+mkdir /tmp_dir_2031/empty_dir 0
+mkdir /tmp_dir_2031/nonempty_dir 0
+open_close /tmp_dir_2031/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2031/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2031/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2031/nonempty_dir/f1.txt [O_EXEC;O_CREAT] 0
+mkdir /tmp_dir_2032/ 0
+mkdir /tmp_dir_2032/empty_dir 0
+mkdir /tmp_dir_2032/nonempty_dir 0
+open_close /tmp_dir_2032/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2032/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2032/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2032/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2033/ 0
+mkdir /tmp_dir_2033/empty_dir 0
+mkdir /tmp_dir_2033/nonempty_dir 0
+open_close /tmp_dir_2033/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2033/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2033/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2033/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2034/ 0
+mkdir /tmp_dir_2034/empty_dir 0
+mkdir /tmp_dir_2034/nonempty_dir 0
+open_close /tmp_dir_2034/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2034/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2034/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2034/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2035/ 0
+mkdir /tmp_dir_2035/empty_dir 0
+mkdir /tmp_dir_2035/nonempty_dir 0
+open_close /tmp_dir_2035/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2035/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2035/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2035/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2036/ 0
+mkdir /tmp_dir_2036/empty_dir 0
+mkdir /tmp_dir_2036/nonempty_dir 0
+open_close /tmp_dir_2036/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2036/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2036/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2036/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2037/ 0
+mkdir /tmp_dir_2037/empty_dir 0
+mkdir /tmp_dir_2037/nonempty_dir 0
+open_close /tmp_dir_2037/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2037/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2037/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2037/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2038/ 0
+mkdir /tmp_dir_2038/empty_dir 0
+mkdir /tmp_dir_2038/nonempty_dir 0
+open_close /tmp_dir_2038/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2038/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2038/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2038/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2039/ 0
+mkdir /tmp_dir_2039/empty_dir 0
+mkdir /tmp_dir_2039/nonempty_dir 0
+open_close /tmp_dir_2039/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2039/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2039/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2039/nonempty_dir/f1.txt [O_EXEC;O_DIRECTORY] 0
+mkdir /tmp_dir_2040/ 0
+mkdir /tmp_dir_2040/empty_dir 0
+mkdir /tmp_dir_2040/nonempty_dir 0
+open_close /tmp_dir_2040/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2040/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2040/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2040/nonempty_dir/f1.txt [O_EXEC;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2041/ 0
+mkdir /tmp_dir_2041/empty_dir 0
+mkdir /tmp_dir_2041/nonempty_dir 0
+open_close /tmp_dir_2041/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2041/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2041/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2041/nonempty_dir/f1.txt [O_EXEC;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2042/ 0
+mkdir /tmp_dir_2042/empty_dir 0
+mkdir /tmp_dir_2042/nonempty_dir 0
+open_close /tmp_dir_2042/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2042/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2042/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2042/nonempty_dir/f1.txt [O_EXEC;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2043/ 0
+mkdir /tmp_dir_2043/empty_dir 0
+mkdir /tmp_dir_2043/nonempty_dir 0
+open_close /tmp_dir_2043/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2043/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2043/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2043/nonempty_dir/f1.txt [O_EXEC;O_EXCL] 0
+mkdir /tmp_dir_2044/ 0
+mkdir /tmp_dir_2044/empty_dir 0
+mkdir /tmp_dir_2044/nonempty_dir 0
+open_close /tmp_dir_2044/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2044/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2044/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2044/nonempty_dir/f1.txt [O_EXEC;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2045/ 0
+mkdir /tmp_dir_2045/empty_dir 0
+mkdir /tmp_dir_2045/nonempty_dir 0
+open_close /tmp_dir_2045/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2045/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2045/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2045/nonempty_dir/f1.txt [O_EXEC;O_NOFOLLOW] 0
+mkdir /tmp_dir_2046/ 0
+mkdir /tmp_dir_2046/empty_dir 0
+mkdir /tmp_dir_2046/nonempty_dir 0
+open_close /tmp_dir_2046/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2046/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2046/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2046/nonempty_dir/f1.txt [O_EXEC;O_TRUNC] 0
+mkdir /tmp_dir_2047/ 0
+mkdir /tmp_dir_2047/empty_dir 0
+mkdir /tmp_dir_2047/nonempty_dir 0
+open_close /tmp_dir_2047/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2047/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2047/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2047/nonempty_dir/f1.txt [O_EXEC] 0
+mkdir /tmp_dir_2048/ 0
+mkdir /tmp_dir_2048/empty_dir 0
+mkdir /tmp_dir_2048/nonempty_dir 0
+open_close /tmp_dir_2048/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2048/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2048/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2048/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2049/ 0
+mkdir /tmp_dir_2049/empty_dir 0
+mkdir /tmp_dir_2049/nonempty_dir 0
+open_close /tmp_dir_2049/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2049/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2049/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2049/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2050/ 0
+mkdir /tmp_dir_2050/empty_dir 0
+mkdir /tmp_dir_2050/nonempty_dir 0
+open_close /tmp_dir_2050/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2050/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2050/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2050/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2051/ 0
+mkdir /tmp_dir_2051/empty_dir 0
+mkdir /tmp_dir_2051/nonempty_dir 0
+open_close /tmp_dir_2051/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2051/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2051/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2051/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2052/ 0
+mkdir /tmp_dir_2052/empty_dir 0
+mkdir /tmp_dir_2052/nonempty_dir 0
+open_close /tmp_dir_2052/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2052/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2052/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2052/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2053/ 0
+mkdir /tmp_dir_2053/empty_dir 0
+mkdir /tmp_dir_2053/nonempty_dir 0
+open_close /tmp_dir_2053/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2053/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2053/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2053/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2054/ 0
+mkdir /tmp_dir_2054/empty_dir 0
+mkdir /tmp_dir_2054/nonempty_dir 0
+open_close /tmp_dir_2054/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2054/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2054/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2054/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2055/ 0
+mkdir /tmp_dir_2055/empty_dir 0
+mkdir /tmp_dir_2055/nonempty_dir 0
+open_close /tmp_dir_2055/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2055/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2055/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2055/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_DIRECTORY] 0
+mkdir /tmp_dir_2056/ 0
+mkdir /tmp_dir_2056/empty_dir 0
+mkdir /tmp_dir_2056/nonempty_dir 0
+open_close /tmp_dir_2056/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2056/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2056/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2056/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2057/ 0
+mkdir /tmp_dir_2057/empty_dir 0
+mkdir /tmp_dir_2057/nonempty_dir 0
+open_close /tmp_dir_2057/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2057/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2057/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2057/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2058/ 0
+mkdir /tmp_dir_2058/empty_dir 0
+mkdir /tmp_dir_2058/nonempty_dir 0
+open_close /tmp_dir_2058/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2058/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2058/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2058/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2059/ 0
+mkdir /tmp_dir_2059/empty_dir 0
+mkdir /tmp_dir_2059/nonempty_dir 0
+open_close /tmp_dir_2059/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2059/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2059/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2059/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_EXCL] 0
+mkdir /tmp_dir_2060/ 0
+mkdir /tmp_dir_2060/empty_dir 0
+mkdir /tmp_dir_2060/nonempty_dir 0
+open_close /tmp_dir_2060/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2060/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2060/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2060/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2061/ 0
+mkdir /tmp_dir_2061/empty_dir 0
+mkdir /tmp_dir_2061/nonempty_dir 0
+open_close /tmp_dir_2061/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2061/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2061/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2061/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_NOFOLLOW] 0
+mkdir /tmp_dir_2062/ 0
+mkdir /tmp_dir_2062/empty_dir 0
+mkdir /tmp_dir_2062/nonempty_dir 0
+open_close /tmp_dir_2062/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2062/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2062/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2062/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT;O_TRUNC] 0
+mkdir /tmp_dir_2063/ 0
+mkdir /tmp_dir_2063/empty_dir 0
+mkdir /tmp_dir_2063/nonempty_dir 0
+open_close /tmp_dir_2063/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2063/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2063/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2063/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_CREAT] 0
+mkdir /tmp_dir_2064/ 0
+mkdir /tmp_dir_2064/empty_dir 0
+mkdir /tmp_dir_2064/nonempty_dir 0
+open_close /tmp_dir_2064/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2064/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2064/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2064/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2065/ 0
+mkdir /tmp_dir_2065/empty_dir 0
+mkdir /tmp_dir_2065/nonempty_dir 0
+open_close /tmp_dir_2065/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2065/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2065/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2065/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2066/ 0
+mkdir /tmp_dir_2066/empty_dir 0
+mkdir /tmp_dir_2066/nonempty_dir 0
+open_close /tmp_dir_2066/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2066/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2066/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2066/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2067/ 0
+mkdir /tmp_dir_2067/empty_dir 0
+mkdir /tmp_dir_2067/nonempty_dir 0
+open_close /tmp_dir_2067/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2067/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2067/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2067/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2068/ 0
+mkdir /tmp_dir_2068/empty_dir 0
+mkdir /tmp_dir_2068/nonempty_dir 0
+open_close /tmp_dir_2068/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2068/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2068/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2068/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2069/ 0
+mkdir /tmp_dir_2069/empty_dir 0
+mkdir /tmp_dir_2069/nonempty_dir 0
+open_close /tmp_dir_2069/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2069/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2069/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2069/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2070/ 0
+mkdir /tmp_dir_2070/empty_dir 0
+mkdir /tmp_dir_2070/nonempty_dir 0
+open_close /tmp_dir_2070/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2070/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2070/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2070/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2071/ 0
+mkdir /tmp_dir_2071/empty_dir 0
+mkdir /tmp_dir_2071/nonempty_dir 0
+open_close /tmp_dir_2071/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2071/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2071/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2071/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_DIRECTORY] 0
+mkdir /tmp_dir_2072/ 0
+mkdir /tmp_dir_2072/empty_dir 0
+mkdir /tmp_dir_2072/nonempty_dir 0
+open_close /tmp_dir_2072/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2072/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2072/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2072/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2073/ 0
+mkdir /tmp_dir_2073/empty_dir 0
+mkdir /tmp_dir_2073/nonempty_dir 0
+open_close /tmp_dir_2073/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2073/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2073/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2073/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2074/ 0
+mkdir /tmp_dir_2074/empty_dir 0
+mkdir /tmp_dir_2074/nonempty_dir 0
+open_close /tmp_dir_2074/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2074/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2074/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2074/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2075/ 0
+mkdir /tmp_dir_2075/empty_dir 0
+mkdir /tmp_dir_2075/nonempty_dir 0
+open_close /tmp_dir_2075/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2075/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2075/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2075/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_EXCL] 0
+mkdir /tmp_dir_2076/ 0
+mkdir /tmp_dir_2076/empty_dir 0
+mkdir /tmp_dir_2076/nonempty_dir 0
+open_close /tmp_dir_2076/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2076/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2076/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2076/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2077/ 0
+mkdir /tmp_dir_2077/empty_dir 0
+mkdir /tmp_dir_2077/nonempty_dir 0
+open_close /tmp_dir_2077/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2077/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2077/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2077/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_NOFOLLOW] 0
+mkdir /tmp_dir_2078/ 0
+mkdir /tmp_dir_2078/empty_dir 0
+mkdir /tmp_dir_2078/nonempty_dir 0
+open_close /tmp_dir_2078/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2078/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2078/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2078/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC;O_TRUNC] 0
+mkdir /tmp_dir_2079/ 0
+mkdir /tmp_dir_2079/empty_dir 0
+mkdir /tmp_dir_2079/nonempty_dir 0
+open_close /tmp_dir_2079/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2079/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2079/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2079/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CLOEXEC] 0
+mkdir /tmp_dir_2080/ 0
+mkdir /tmp_dir_2080/empty_dir 0
+mkdir /tmp_dir_2080/nonempty_dir 0
+open_close /tmp_dir_2080/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2080/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2080/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2080/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2081/ 0
+mkdir /tmp_dir_2081/empty_dir 0
+mkdir /tmp_dir_2081/nonempty_dir 0
+open_close /tmp_dir_2081/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2081/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2081/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2081/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2082/ 0
+mkdir /tmp_dir_2082/empty_dir 0
+mkdir /tmp_dir_2082/nonempty_dir 0
+open_close /tmp_dir_2082/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2082/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2082/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2082/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2083/ 0
+mkdir /tmp_dir_2083/empty_dir 0
+mkdir /tmp_dir_2083/nonempty_dir 0
+open_close /tmp_dir_2083/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2083/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2083/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2083/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_EXCL] 0
+mkdir /tmp_dir_2084/ 0
+mkdir /tmp_dir_2084/empty_dir 0
+mkdir /tmp_dir_2084/nonempty_dir 0
+open_close /tmp_dir_2084/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2084/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2084/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2084/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2085/ 0
+mkdir /tmp_dir_2085/empty_dir 0
+mkdir /tmp_dir_2085/nonempty_dir 0
+open_close /tmp_dir_2085/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2085/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2085/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2085/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_NOFOLLOW] 0
+mkdir /tmp_dir_2086/ 0
+mkdir /tmp_dir_2086/empty_dir 0
+mkdir /tmp_dir_2086/nonempty_dir 0
+open_close /tmp_dir_2086/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2086/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2086/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2086/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY;O_TRUNC] 0
+mkdir /tmp_dir_2087/ 0
+mkdir /tmp_dir_2087/empty_dir 0
+mkdir /tmp_dir_2087/nonempty_dir 0
+open_close /tmp_dir_2087/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2087/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2087/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2087/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_DIRECTORY] 0
+mkdir /tmp_dir_2088/ 0
+mkdir /tmp_dir_2088/empty_dir 0
+mkdir /tmp_dir_2088/nonempty_dir 0
+open_close /tmp_dir_2088/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2088/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2088/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2088/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2089/ 0
+mkdir /tmp_dir_2089/empty_dir 0
+mkdir /tmp_dir_2089/nonempty_dir 0
+open_close /tmp_dir_2089/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2089/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2089/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2089/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2090/ 0
+mkdir /tmp_dir_2090/empty_dir 0
+mkdir /tmp_dir_2090/nonempty_dir 0
+open_close /tmp_dir_2090/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2090/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2090/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2090/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2091/ 0
+mkdir /tmp_dir_2091/empty_dir 0
+mkdir /tmp_dir_2091/nonempty_dir 0
+open_close /tmp_dir_2091/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2091/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2091/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2091/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_EXCL] 0
+mkdir /tmp_dir_2092/ 0
+mkdir /tmp_dir_2092/empty_dir 0
+mkdir /tmp_dir_2092/nonempty_dir 0
+open_close /tmp_dir_2092/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2092/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2092/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2092/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2093/ 0
+mkdir /tmp_dir_2093/empty_dir 0
+mkdir /tmp_dir_2093/nonempty_dir 0
+open_close /tmp_dir_2093/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2093/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2093/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2093/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_NOFOLLOW] 0
+mkdir /tmp_dir_2094/ 0
+mkdir /tmp_dir_2094/empty_dir 0
+mkdir /tmp_dir_2094/nonempty_dir 0
+open_close /tmp_dir_2094/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2094/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2094/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2094/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT;O_TRUNC] 0
+mkdir /tmp_dir_2095/ 0
+mkdir /tmp_dir_2095/empty_dir 0
+mkdir /tmp_dir_2095/nonempty_dir 0
+open_close /tmp_dir_2095/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2095/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2095/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2095/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_CREAT] 0
+mkdir /tmp_dir_2096/ 0
+mkdir /tmp_dir_2096/empty_dir 0
+mkdir /tmp_dir_2096/nonempty_dir 0
+open_close /tmp_dir_2096/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2096/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2096/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2096/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_DIRECTORY;O_EXCL;O_NOFOLLOW;O_TRUNC] 0
+mkdir /tmp_dir_2097/ 0
+mkdir /tmp_dir_2097/empty_dir 0
+mkdir /tmp_dir_2097/nonempty_dir 0
+open_close /tmp_dir_2097/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2097/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2097/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2097/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_DIRECTORY;O_EXCL;O_NOFOLLOW] 0
+mkdir /tmp_dir_2098/ 0
+mkdir /tmp_dir_2098/empty_dir 0
+mkdir /tmp_dir_2098/nonempty_dir 0
+open_close /tmp_dir_2098/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2098/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2098/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2098/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_DIRECTORY;O_EXCL;O_TRUNC] 0
+mkdir /tmp_dir_2099/ 0
+mkdir /tmp_dir_2099/empty_dir 0
+mkdir /tmp_dir_2099/nonempty_dir 0
+open_close /tmp_dir_2099/nonempty_dir/f1.txt [O_RDWR;O_CREAT] 0
+open_close /tmp_dir_2099/nonempty_dir/f2.txt [O_RDWR;O_CREAT] 0
+pwrite /tmp_dir_2099/nonempty_dir/f2.txt 0 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+open /tmp_dir_2099/nonempty_dir/f1.txt [O_RDONLY;O_APPEND;O_DIRECTORY;O_EXCL] 0
