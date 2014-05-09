@@ -1,0 +1,25 @@
+src_ext/fs/fs_test/testdiff.native ./_2014-05-09_posix_mkdir_35W/posix_test_results ./_2014-05-09_interp_mkdir_ec7/interp_test_results
+l1715:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l1767:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l1871:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l1923:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l2131:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l2183:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l2287:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
+l2339:
+<[EEXIST]
+>[ENOTDIR;ENOENT]
