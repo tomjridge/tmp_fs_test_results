@@ -1,0 +1,10 @@
+src_ext/fs/fs_test/testdiff.native ./_2014-05-19_posix_pread_1XB/posix_test_results ./_2014-05-19_interp_pread_dyU/interp_test_results
+l105:
+<[EFAULT]
+>[EINVAL]
+l153:
+<[EFAULT]
+>[EINVAL]
+l155:
+<[EFAULT]
+>[EINVAL]
