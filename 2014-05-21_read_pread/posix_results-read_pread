@@ -1,0 +1,261 @@
+      # adhoc_pread_tests2: adhoc tests to check behaviour of read in various situations
+
+
+      ##############################################
+      # initialization
+      ##############################################
+
+      # empty and non-empty directories to read from
+   9: mkdir /empty_dir 0o777
+      None1
+  10: mkdir /non_empty_dir 0o777
+      None1
+
+      # create files with different contents in the non-empty directory
+  13: chdir /non_empty_dir
+      None1
+
+      # f1.txt is empty
+  16: open_close f1.txt [O_RDWR;O_CREAT] 0o666
+      None1
+
+      # f2.txt contains some short text
+  19: open f2.txt [O_RDWR;O_CREAT] 0o666
+      Int1(3)
+  20: write (FD 3) "Lorem ipsum dolor sit a" 23
+      Int1(23)
+  21: close (FD 3)
+      None1
+
+      # f3.txt contains all kinds of strange characters
+  24: open f3.txt [O_RDWR;O_CREAT] 0o666
+      Int1(3)
+  25: write (FD 3) "\"-#@/\000\001\001\243\b" 10
+      Int1(10)
+  26: close (FD 3)
+      None1
+
+
+      ##############################################
+      # read on an empty file
+      ##############################################
+
+      # read nothing 
+  34: open f1.txt [O_RDONLY]
+      Int1(3)
+  35: pread (FD 3) 0 0
+      Bytes1("")
+  36: close (FD 3)
+      None1
+
+      # read 1 char beyond end
+  39: open f1.txt [O_RDONLY]
+      Int1(3)
+  40: pread (FD 3) 1 0
+      Bytes1("")
+  41: close (FD 3)
+      None1
+
+      # read 1 char after seeking beyond end
+  44: open f1.txt [O_RDONLY]
+      Int1(3)
+  45: pread (FD 3) 1 100
+      Bytes1("")
+  46: close (FD 3)
+      None1
+
+      # read with negative offset 
+  49: open f1.txt [O_RDONLY]
+      Int1(3)
+  50: pread (FD 3) 1 -100
+      EINVAL
+  51: close (FD 3)
+      None1
+
+
+
+      ##############################################
+      # read on a non-empty file
+      ##############################################
+
+      # f2.txt is 23 bytes long
+
+      # pread 0 chars
+  62: open f2.txt [O_RDONLY]
+      Int1(3)
+  63: pread (FD 3) 0 0
+      Bytes1("")
+  64: close (FD 3)
+      None1
+
+      # read 0 chars
+  67: open f2.txt [O_RDONLY]
+      Int1(3)
+  68: read (FD 3) 0
+      Bytes1("")
+  69: close (FD 3)
+      None1
+
+      # pread 2 chars
+  72: open f2.txt [O_RDONLY]
+      Int1(3)
+  73: pread (FD 3) 2 0
+      Bytes1("Lo")
+  74: close (FD 3)
+      None1
+
+      # read 2 chars
+  77: open f2.txt [O_RDONLY]
+      Int1(3)
+  78: read (FD 3) 2
+      Bytes1("Lo")
+  79: close (FD 3)
+      None1
+
+      # pread 2 chars with offset 5
+  82: open f2.txt [O_RDONLY]
+      Int1(3)
+  83: pread (FD 3) 2 5
+      Bytes1(" i")
+  84: close (FD 3)
+      None1
+
+      # read 2 chars and then 3, preads don't influence each other
+  87: open f2.txt [O_RDONLY]
+      Int1(3)
+  88: pread (FD 3) 2 0
+      Bytes1("Lo")
+  89: pread (FD 3) 3 0
+      Bytes1("Lor")
+  90: close (FD 3)
+      None1
+
+      # read 2 chars and then 3, reads influence each other
+  93: open f2.txt [O_RDONLY]
+      Int1(3)
+  94: read (FD 3) 2
+      Bytes1("Lo")
+  95: read (FD 3) 3
+      Bytes1("rem")
+  96: close (FD 3)
+      None1
+
+      # pread over end of file
+  99: open f2.txt [O_RDONLY]
+      Int1(3)
+ 100: pread (FD 3) 100 0
+      Bytes1("Lorem ipsum dolor sit a")
+ 101: close (FD 3)
+      None1
+
+      # read over end of file
+ 104: open f2.txt [O_RDONLY]
+      Int1(3)
+ 105: read (FD 3) 100
+      Bytes1("Lorem ipsum dolor sit a")
+ 106: close (FD 3)
+      None1
+
+      # pread just after end
+ 109: open f2.txt [O_RDONLY]
+      Int1(3)
+ 110: pread (FD 3) 1 23
+      Bytes1("")
+ 111: close (FD 3)
+      None1
+
+      # pread far beyond end
+ 114: open f2.txt [O_RDONLY]
+      Int1(3)
+ 115: pread (FD 3) 1 100
+      Bytes1("")
+ 116: close (FD 3)
+      None1
+
+      # pread over end
+ 119: open f2.txt [O_RDONLY]
+      Int1(3)
+ 120: pread (FD 3) 5 20
+      Bytes1("t a")
+ 121: close (FD 3)
+      None1
+
+      # pread with negative offset
+ 124: open f2.txt [O_RDONLY]
+      Int1(3)
+ 125: pread (FD 3) 1 -100
+      EINVAL
+ 126: close (FD 3)
+      None1
+
+      # multiple reads with offset don't influence each other or reads
+ 129: open f2.txt [O_RDONLY]
+      Int1(3)
+ 130: read (FD 3) 2
+      Bytes1("Lo")
+ 131: pread (FD 3) 5 10
+      Bytes1("m dol")
+ 132: read (FD 3) 3
+      Bytes1("rem")
+ 133: pread (FD 3) 5 2
+      Bytes1("rem i")
+ 134: read (FD 3) 2
+      Bytes1(" i")
+ 135: close (FD 3)
+      None1
+
+
+      ##############################################
+      # test reading of special chars
+      ##############################################
+
+ 142: open f3.txt [O_RDONLY]
+      Int1(3)
+ 143: read (FD 3) 100
+      Bytes1("\"-#@/\000\001\001\243\b")
+ 144: close (FD 3)
+      None1
+
+
+      ##############################################
+      # read on directories
+      ##############################################
+
+ 151: open /empty_dir [O_RDONLY]
+      Int1(3)
+ 152: pread (FD 3) 0 0
+      EISDIR
+ 153: pread (FD 3) 1 0
+      EISDIR
+ 154: pread (FD 3) 1 1
+      EISDIR
+ 155: read (FD 3) 0
+      EISDIR
+ 156: read (FD 3) 1
+      EISDIR
+ 157: read (FD 3) 1
+      EISDIR
+ 158: close (FD 3)
+      None1
+
+ 160: open /non_empty_dir [O_RDONLY]
+      Int1(3)
+ 161: pread (FD 3) 0 0
+      EISDIR
+ 162: pread (FD 3) 1 0
+      EISDIR
+ 163: pread (FD 3) 1 1
+      EISDIR
+ 164: read (FD 3) 0
+      EISDIR
+ 165: read (FD 3) 1
+      EISDIR
+ 166: read (FD 3) 1
+      EISDIR
+ 167: close (FD 3)
+      None1
+
+
+      ##############################################
+      # finished :-)
+      ##############################################

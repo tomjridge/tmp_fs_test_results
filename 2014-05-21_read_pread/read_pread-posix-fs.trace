@@ -1,0 +1,439 @@
+# adhoc_pread_tests2: adhoc tests to check behaviour of read in various situations
+
+
+##############################################
+# initialization
+##############################################
+
+# empty and non-empty directories to read from
+mkdir /empty_dir 0o777
+Tau
+None1
+
+mkdir /non_empty_dir 0o777
+Tau
+None1
+
+
+# create files with different contents in the non-empty directory
+chdir /non_empty_dir
+Tau
+None1
+
+
+# f1.txt is empty
+open_close f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+
+# f2.txt contains some short text
+open f2.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "Lorem ipsum dolor sit a" 23
+Tau
+Int1(23)
+
+close (FD 3)
+Tau
+None1
+
+
+# f3.txt contains all kinds of strange characters
+open f3.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "\"-#@/\000\001\001\243\b" 10
+Tau
+Int1(10)
+
+close (FD 3)
+Tau
+None1
+
+
+
+##############################################
+# read on an empty file
+##############################################
+
+# read nothing 
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 0 0
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 1 char beyond end
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 0
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 1 char after seeking beyond end
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 100
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# read with negative offset 
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 -100
+Tau
+EINVAL
+
+close (FD 3)
+Tau
+None1
+
+
+
+
+##############################################
+# read on a non-empty file
+##############################################
+
+# f2.txt is 23 bytes long
+
+# pread 0 chars
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 0 0
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 0 chars
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 0
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread 2 chars
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 2 0
+Tau
+Bytes1("Lo")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 2 chars
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 2
+Tau
+Bytes1("Lo")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread 2 chars with offset 5
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 2 5
+Tau
+Bytes1(" i")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 2 chars and then 3, preads don't influence each other
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 2 0
+Tau
+Bytes1("Lo")
+
+pread (FD 3) 3 0
+Tau
+Bytes1("Lor")
+
+close (FD 3)
+Tau
+None1
+
+
+# read 2 chars and then 3, reads influence each other
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 2
+Tau
+Bytes1("Lo")
+
+read (FD 3) 3
+Tau
+Bytes1("rem")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread over end of file
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 100 0
+Tau
+Bytes1("Lorem ipsum dolor sit a")
+
+close (FD 3)
+Tau
+None1
+
+
+# read over end of file
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 100
+Tau
+Bytes1("Lorem ipsum dolor sit a")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread just after end
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 23
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread far beyond end
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 100
+Tau
+Bytes1("")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread over end
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 5 20
+Tau
+Bytes1("t a")
+
+close (FD 3)
+Tau
+None1
+
+
+# pread with negative offset
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1 -100
+Tau
+EINVAL
+
+close (FD 3)
+Tau
+None1
+
+
+# multiple reads with offset don't influence each other or reads
+open f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 2
+Tau
+Bytes1("Lo")
+
+pread (FD 3) 5 10
+Tau
+Bytes1("m dol")
+
+read (FD 3) 3
+Tau
+Bytes1("rem")
+
+pread (FD 3) 5 2
+Tau
+Bytes1("rem i")
+
+read (FD 3) 2
+Tau
+Bytes1(" i")
+
+close (FD 3)
+Tau
+None1
+
+
+
+##############################################
+# test reading of special chars
+##############################################
+
+open f3.txt [O_RDONLY]
+Tau
+Int1(3)
+
+read (FD 3) 100
+Tau
+Bytes1("\"-#@/\000\001\001\243\b")
+
+close (FD 3)
+Tau
+None1
+
+
+
+##############################################
+# read on directories
+##############################################
+
+open /empty_dir [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 0 0
+Tau
+EISDIR
+
+pread (FD 3) 1 0
+Tau
+EISDIR
+
+pread (FD 3) 1 1
+Tau
+EISDIR
+
+read (FD 3) 0
+Tau
+EISDIR
+
+read (FD 3) 1
+Tau
+EISDIR
+
+read (FD 3) 1
+Tau
+EISDIR
+
+close (FD 3)
+Tau
+None1
+
+
+open /non_empty_dir [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 0 0
+Tau
+EISDIR
+
+pread (FD 3) 1 0
+Tau
+EISDIR
+
+pread (FD 3) 1 1
+Tau
+EISDIR
+
+read (FD 3) 0
+Tau
+EISDIR
+
+read (FD 3) 1
+Tau
+EISDIR
+
+read (FD 3) 1
+Tau
+EISDIR
+
+close (FD 3)
+Tau
+None1
+
+
+
+##############################################
+# finished :-)
+##############################################
