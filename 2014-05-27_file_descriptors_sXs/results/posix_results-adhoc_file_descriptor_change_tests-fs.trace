@@ -1,0 +1,127 @@
+# Tests for a file underlying a file-descriptor
+# being modified while the descriptor is open
+
+# create a file with some content
+open f1.txt [O_RDWR;O_CREAT] 0o644
+Tau
+Int1(3)
+
+write (FD 3) "0123456789" 10
+Tau
+Int1(10)
+
+
+open f1.txt [O_RDONLY]
+Tau
+Int1(4)
+
+# check we are at the beginning
+read (FD 4) 100
+Tau
+Bytes1("0123456789")
+
+
+# check lseek to FD 4 does not affect FD 3
+lseek (FD 4) 0 SEEK_SET
+Tau
+Int1(0)
+
+write (FD 3) "AB" 2
+Tau
+Int1(2)
+
+
+# but content is present in both
+pread (FD 3) 100 0
+Tau
+Bytes1("0123456789AB")
+
+pread (FD 4) 100 0
+Tau
+Bytes1("0123456789AB")
+
+
+close (FD 3)
+Tau
+None1
+
+close (FD 4)
+Tau
+None1
+
+
+
+
+# open f1, then delete it
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+unlink f1.txt
+Tau
+None1
+
+pread (FD 3) 100 0
+Tau
+Bytes1("0123456789AB")
+
+
+open_close f1.txt [O_RDONLY]
+Tau
+ENOENT
+
+
+close (FD 3)
+Tau
+None1
+
+
+
+# open f1, then rename it
+open f1.txt [O_RDWR;O_CREAT] 0o644
+Tau
+Int1(3)
+
+write (FD 3) "0123456789" 10
+Tau
+Int1(10)
+
+close (FD 3)
+Tau
+None1
+
+
+open f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+rename f1.txt f2.txt
+Tau
+None1
+
+pread (FD 3) 100 0
+Tau
+Bytes1("0123456789")
+
+
+open_close f1.txt [O_RDONLY]
+Tau
+ENOENT
+
+open f2.txt [O_RDONLY]
+Tau
+Int1(4)
+
+pread (FD 4) 100 0
+Tau
+Bytes1("0123456789")
+
+close (FD 4)
+Tau
+None1
+
+close (FD 3)
+Tau
+None1
+
+

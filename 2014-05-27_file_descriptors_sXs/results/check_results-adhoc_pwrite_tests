@@ -1,0 +1,324 @@
+        # tesing pwrite and write
+
+
+        ##############################################
+        # initialization
+        ##############################################
+
+        # empty and non-empty directories to write to
+     8: mkdir /empty_dir 0o777
+        None1
+     9: mkdir /non_empty_dir 0o777
+        None1
+
+    11: chdir /non_empty_dir
+        None1
+
+
+        ##############################################
+        # simple writes
+        ##############################################
+
+        # start on empty file and write something
+    19: open f1.txt [O_RDWR;O_CREAT] 0o666
+        Int1(3)
+    20: write (FD 3) "0123456789" 10
+        Int1(10)
+    21: close (FD 3)
+        None1
+
+    23: open f1.txt [O_RDONLY]
+        Int1(3)
+    24: read (FD 3) 100
+        Bytes1("0123456789")
+    25: close (FD 3)
+        None1
+
+        # write even more stuff at the end
+    28: open f1.txt [O_RDWR;O_APPEND] 0o666
+        Int1(3)
+    29: write (FD 3) "0123456789" 10
+        Int1(10)
+    30: close (FD 3)
+        None1
+
+    32: open f1.txt [O_RDONLY]
+        Int1(3)
+    33: read (FD 3) 100
+        Bytes1("01234567890123456789")
+    34: close (FD 3)
+        None1
+
+        # overwrite at begining
+    37: open f1.txt [O_RDWR] 0o666
+        Int1(3)
+    38: write (FD 3) "XXX" 3
+        Int1(3)
+    39: close (FD 3)
+        None1
+
+    41: open f1.txt [O_RDONLY]
+        Int1(3)
+    42: read (FD 3) 100
+        Bytes1("XXX34567890123456789")
+    43: close (FD 3)
+        None1
+
+        # truncate file
+    46: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+    47: write (FD 3) "0123456789" 10
+        Int1(10)
+    48: close (FD 3)
+        None1
+
+    50: open f1.txt [O_RDONLY]
+        Int1(3)
+    51: read (FD 3) 100
+        Bytes1("0123456789")
+    52: close (FD 3)
+        None1
+
+        # shorter size
+    55: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+    56: write (FD 3) "0123456789" 5
+        Int1(5)
+    57: close (FD 3)
+        None1
+
+    59: open f1.txt [O_RDONLY]
+        Int1(3)
+    60: read (FD 3) 100
+        Bytes1("01234")
+    61: close (FD 3)
+        None1
+
+
+        ##############################################
+        # pwrite
+        ##############################################
+
+        # write with pwrite at arbitrary positions
+    69: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+    70: write (FD 3) "0123456789" 10
+        Int1(10)
+    71: pwrite (FD 3) "X" 1 4
+        Int1(1)
+    72: pwrite (FD 3) "X" 1 6
+        Int1(1)
+    73: pwrite (FD 3) "X" 1 8
+        Int1(1)
+    74: write (FD 3) "0123456789" 10
+        Int1(10)
+    75: close (FD 3)
+        None1
+
+    77: open f1.txt [O_RDONLY]
+        Int1(3)
+    78: read (FD 3) 100
+        Bytes1("0123X5X7X90123456789")
+    79: close (FD 3)
+        None1
+
+
+        # pwrite with negative index
+    83: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+    84: pwrite (FD 3) "XXX" 3 -100
+        EINVAL
+    85: close (FD 3)
+        None1
+
+    87: open f1.txt [O_RDONLY]
+        Int1(3)
+    88: read (FD 3) 100
+        Bytes1("")
+    89: close (FD 3)
+        None1
+
+
+        # pwrite after end of file
+    93: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+    94: pwrite (FD 3) "XXX" 3 10
+        Int1(3)
+    95: close (FD 3)
+        None1
+
+    97: open f1.txt [O_RDONLY]
+        Int1(3)
+    98: read (FD 3) 100
+        Bytes1("\000\000\000\000\000\000\000\000\000\000XXX")
+    99: close (FD 3)
+        None1
+
+
+        # pwrite then write
+   103: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+   104: pwrite (FD 3) "XXX" 3 10
+        Int1(3)
+   105: write (FD 3) "01234" 5
+        Int1(5)
+   106: close (FD 3)
+        None1
+
+   108: open f1.txt [O_RDONLY]
+        Int1(3)
+   109: read (FD 3) 100
+        Bytes1("01234\000\000\000\000\000XXX")
+   110: close (FD 3)
+        None1
+
+
+
+        ##############################################
+        # lseek 
+        ##############################################
+
+   118: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+   119: write (FD 3) "0123456789" 10
+        Int1(10)
+   120: lseek (FD 3) -3 SEEK_CUR
+        Int1(7)
+   121: write (FD 3) "ABC" 3
+        Int1(3)
+   122: pwrite (FD 3) "X" 1 4
+        Int1(1)
+   123: lseek (FD 3) 2 SEEK_SET
+        Int1(2)
+   124: write (FD 3) "Y" 1
+        Int1(1)
+   125: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   126: read (FD 3) 100
+        Bytes1("01Y3X56ABC")
+   127: close (FD 3)
+        None1
+
+        #write after end adds 0s
+   130: open f1.txt [O_RDWR;O_TRUNC] 0o666
+        Int1(3)
+   131: write (FD 3) "0123456789" 10
+        Int1(10)
+   132: lseek (FD 3) 5 SEEK_CUR
+        Int1(15)
+   133: write (FD 3) "ABCDE" 5
+        Int1(5)
+   134: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   135: read (FD 3) 100
+        Bytes1("0123456789\000\000\000\000\000ABCDE")
+   136: close (FD 3)
+        None1
+
+        ##############################################
+        # writes with different file-descriptors
+        ##############################################
+
+        # read/write is fine
+   143: open f1.txt [O_RDWR;O_TRUNC]
+        Int1(3)
+   144: write (FD 3) "0123456789" 10
+        Int1(10)
+   145: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   146: read (FD 3) 100
+        Bytes1("0123456789")
+   147: close (FD 3)
+        None1
+
+        # write_only is fine / truncate works
+   150: open f1.txt [O_WRONLY;O_TRUNC]
+        Int1(3)
+   151: write (FD 3) "ABCDE" 5
+        Int1(5)
+   152: close (FD 3)
+        None1
+   153: open f1.txt [O_RDONLY]
+        Int1(3)
+   154: read (FD 3) 100
+        Bytes1("ABCDE")
+   155: close (FD 3)
+        None1
+
+        # write_only without truncate keeps old content, but overwrites it 
+   158: open f1.txt [O_WRONLY]
+        Int1(3)
+   159: write (FD 3) "012" 3
+        Int1(3)
+   160: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   161: read (FD 3) 100
+        EBADF
+   162: close (FD 3)
+        None1
+   163: open f1.txt [O_RDONLY]
+        Int1(3)
+   164: read (FD 3) 100
+        Bytes1("012DE")
+   165: close (FD 3)
+        None1
+
+        # append is adding at end
+   168: open f1.txt [O_RDWR;O_APPEND]
+        Int1(3)
+   169: write (FD 3) "ABCDE" 5
+        Int1(5)
+   170: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   171: read (FD 3) 100
+        Bytes1("012DEABCDE")
+   172: close (FD 3)
+        None1
+
+        # writing a read-only file fails
+   175: open f1.txt [O_RDONLY]
+        Int1(3)
+   176: write (FD 3) "ABCDE" 5
+        EBADF
+   177: lseek (FD 3) 0 SEEK_SET
+        Int1(0)
+   178: read (FD 3) 100
+        Bytes1("012DEABCDE")
+   179: close (FD 3)
+        None1
+
+        # closed FD cannot be written to
+   182: write (FD 3) "ABCDE" 5
+        EBADF
+
+        # non existing FD can't be used
+   185: write (FD 300) "ABCDE" 5
+        EBADF
+
+
+        ##############################################
+        # writing to directories
+        # this is already prohibited 
+        # by the open command
+        ##############################################
+
+   194: open /non_empty_dir [O_RDWR]
+        EISDIR
+   195: write (FD 3) "ABC" 3
+        EBADF
+   196: close (FD 3)
+        EBADF
+
+   198: open /non_empty_dir [O_WRONLY]
+        EISDIR
+   199: write (FD 3) "ABC" 3
+        EBADF
+   200: close (FD 3)
+        EBADF
+
+   202: open /non_empty_dir [O_RDONLY]
+        Int1(3)
+   203: write (FD 3) "ABC" 3
+        EBADF
+   204: close (FD 3)
+        None1
