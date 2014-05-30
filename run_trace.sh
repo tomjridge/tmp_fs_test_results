@@ -30,21 +30,20 @@ if [[ "$file_raw" == *-int.trace ]]
 then
   file=${file_raw%-int.trace}
 
-  if [[ "$file" != *posix ]] 
-  then
-    echo "Interpreting $file with check ..."
-    $check_command -arch linux $file-int.trace | tee results/check_results-$file >> $out
-  fi
-
-  if [[ "$file" != *check ]] 
-  then
-    echo -e "Interpreting $file with posix ..."
-    $posix_command $file-int.trace -o results/posix_results-$file-fs.trace | tee results/posix_results-$file >> $out
-
+  if [[ "$file" != *posix && "$file" != *check ]]
+  then # run full tests
+      $posix_command -c $file-int.trace -cpo results/posix_results-$file-fs.trace -cpl results/posix_results-$file -ccl results/check_results-$file -cl results/diff_results-$file
+  else
     if [[ "$file" != *posix ]] 
     then
-      echo -e "Checking that posix-results are accepted by specification ..."
-      $check_command -arch linux results/posix_results-$file-fs.trace
+      echo "Interpreting $file with check ..."
+      $check_command -arch linux $file-int.trace | tee results/check_results-$file >> $out
+    fi
+
+    if [[ "$file" != *check ]] 
+    then
+      echo -e "Interpreting $file with posix ..."
+      $posix_command $file-int.trace -o results/posix_results-$file-fs.trace | tee results/posix_results-$file >> $out
     fi
   fi;
 else 
