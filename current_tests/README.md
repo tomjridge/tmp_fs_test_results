@@ -17,7 +17,7 @@ close   | file_descriptors
 link    | link
 lseek   | file_descriptors
 mkdir   | mkdir
-open    | file_descriptors
+open    | file_descriptors, open
 pread   | file_descriptors
 pwrite  | file_descriptors
 read    | file_descriptors
@@ -43,6 +43,9 @@ write   | file_descriptors
 
 ## mkdir             
 - 2014-05-27 OK
+
+## open
+- 2014-06-02 OK
 
 ## rename
 - 2014-05-27 OK

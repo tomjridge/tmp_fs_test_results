@@ -3,12 +3,12 @@
 # call this script with the argument directory of traces to test test 
 # e.g. ./this_script.sh current_tests/open_read_write
 
-if [[ $1 == "-git" ]]
+if [[ $1 == "-dummy" ]]
 then
     shift;
-    real=1;
-else
     real=0;
+else
+    real=1;
 fi
 
 test_dir=$1
@@ -30,6 +30,7 @@ fi
 
 echo "creating test-directory $OUTDIR ..."
 cp $test_dir/* $OUTDIR
+rm $OUTDIR/*~
 mkdir $OUTDIR/results
 
 cd $OUTDIR
