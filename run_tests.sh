@@ -44,12 +44,14 @@ done
 
 echo -e "\ndone!"
 
-if [[ $real -eq 1 ]]
-then
-    cd ..
-    echo "staging $OUTDIR ..."
-    git stage $OUTDIR
-fi
+# tr: I prefer not to stage these in git automatically!
+#
+# if [[ $real -eq 1 ]]
+# then
+#     cd ..
+#     echo "staging $OUTDIR ..."
+#     git stage $OUTDIR
+# fi
 
 exit 0
 
