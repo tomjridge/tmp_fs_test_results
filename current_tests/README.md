@@ -60,6 +60,8 @@ write   | file_descriptors
 ## stat
 - 2014-05-27 
   test infrastructure needs improving to compare stat results
+- 2014-06-12 OK
+  rerun after implementing comparing stat results correctly
 
 ## truncate
 - 2014-05-30 OK
