@@ -1,0 +1,248 @@
+        # adhoc_chdir_tests
+
+        # initialization
+        # create directory structure
+        #
+        # - d1
+        #   + d11
+        #   + d12
+        # - d2
+        #   + d21
+        #   + d22
+        #
+        # in each directory create a file with the same name 
+        # as the directory
+
+    15: open_close /root.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+
+    17: mkdir /d1 0o777
+        Tau
+        None1
+
+    18: mkdir /d1/d11 0o777
+        Tau
+        None1
+
+    19: mkdir /d1/d12 0o777
+        Tau
+        None1
+
+    20: open_close /d1/f1.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+    21: open_close /d1/d11/f11.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+    22: open_close /d1/d12/f12.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+
+    24: mkdir /d2 0o777
+        Tau
+        None1
+
+    25: mkdir /d2/d21 0o777
+        Tau
+        None1
+
+    26: mkdir /d2/d22 0o777
+        Tau
+        None1
+
+    27: open_close /d2/f2.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+    28: open_close /d2/d21/f21.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+    29: open_close /d2/d22/f22.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        None1
+
+
+
+        ###############################################
+        # Tests
+        ###############################################
+
+        # we test whether we are in the correct directory
+        # by opening a file. The file-names should correspond
+        # to the directory names 
+
+        # check we are at the beginning in root directory
+    41: open_close root.txt [O_RDONLY]
+        Tau
+        None1
+
+    42: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+    43: open_close f1.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # change to d1
+    46: chdir d1
+        Tau
+        None1
+
+    47: open_close f1.txt [O_RDONLY]
+        Tau
+        None1
+
+    48: open_close root.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # change to d11
+    51: chdir d11
+        Tau
+        None1
+
+    52: open_close f11.txt [O_RDONLY]
+        Tau
+        None1
+
+    53: open_close ../f1.txt [O_RDONLY]
+        Tau
+        None1
+
+    54: open_close ../../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    55: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # change back to d1
+    58: chdir ..
+        Tau
+        None1
+
+    59: open_close d11/f11.txt [O_RDONLY]
+        Tau
+        None1
+
+    60: open_close d12/f12.txt [O_RDONLY]
+        Tau
+        None1
+
+    61: open_close f1.txt [O_RDONLY]
+        Tau
+        None1
+
+    62: open_close ../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    63: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # stay in d1
+    66: chdir .
+        Tau
+        None1
+
+    67: open_close d11/f11.txt [O_RDONLY]
+        Tau
+        None1
+
+    68: open_close d12/f12.txt [O_RDONLY]
+        Tau
+        None1
+
+    69: open_close f1.txt [O_RDONLY]
+        Tau
+        None1
+
+    70: open_close ../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    71: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # switch to d2
+    74: chdir ../d2
+        Tau
+        None1
+
+    75: open_close d21/f21.txt [O_RDONLY]
+        Tau
+        None1
+
+    76: open_close f2.txt [O_RDONLY]
+        Tau
+        None1
+
+    77: open_close ../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    78: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # switch to non-existing subdirectory, should fail and stay in d2
+    81: chdir no_such_dir
+        Tau
+        ENOENT
+
+    82: open_close d21/f21.txt [O_RDONLY]
+        Tau
+        None1
+
+    83: open_close f2.txt [O_RDONLY]
+        Tau
+        None1
+
+    84: open_close ../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    85: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+        # switch to file
+    88: chdir f2.txt
+        Tau
+        ENOTDIR
+
+    89: open_close d21/f21.txt [O_RDONLY]
+        Tau
+        None1
+
+    90: open_close f2.txt [O_RDONLY]
+        Tau
+        None1
+
+    91: open_close ../root.txt [O_RDONLY]
+        Tau
+        None1
+
+    92: open_close no_such_file.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+trace accepted

@@ -10,7 +10,7 @@ and perhaps some short description of the results is given.
 
 command | test-suites
 ---------------------------------------------------------------
-chdir   | -
+chdir   | chdir
 chmod   | -
 chown   | -
 close   | file_descriptors
@@ -34,6 +34,9 @@ write   | file_descriptors
 
 
 # Test-suites
+
+## chdir
+- 2014-06-12 OK
 
 ## file_descriptors  
 - 2014-05-27 OK
