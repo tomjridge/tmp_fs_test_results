@@ -1,0 +1,122 @@
+# adhoc_readdir_tests
+#
+# initialization
+mkdir /empty_dir 0o777
+Tau
+None1
+
+mkdir /non_empty_dir_1 0o777
+Tau
+None1
+
+mkdir /non_empty_dir_2 0o777
+Tau
+None1
+
+mkdir /non_empty_dir_3 0o777
+Tau
+None1
+
+
+open_close /non_empty_dir_1/f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_1/f2.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_1/f3.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_1/f4.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_1/f;5.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+
+open_close /non_empty_dir_2/f4.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_2/f3.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_2/f2.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open_close /non_empty_dir_2/f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+
+open_close /non_empty_dir_3/f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+open /non_empty_dir_3/f3.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+Tau
+Int1(875)
+
+close (FD 3)
+Tau
+None1
+
+
+# the read tests
+
+readdir /empty_dir
+Tau
+[".";".."]
+
+readdir /empty_dir/
+Tau
+[".";".."]
+
+
+readdir /non_empty_dir_1
+Tau
+[".";"f3.txt";"f1.txt";"f;5.txt";"..";"f4.txt";"f2.txt"]
+
+readdir /non_empty_dir_1/
+Tau
+[".";"f3.txt";"f1.txt";"f;5.txt";"..";"f4.txt";"f2.txt"]
+
+readdir /non_empty_dir_2
+Tau
+[".";"f3.txt";"f1.txt";"..";"f4.txt";"f2.txt"]
+
+readdir /non_empty_dir_2/
+Tau
+[".";"f3.txt";"f1.txt";"..";"f4.txt";"f2.txt"]
+
+readdir /non_empty_dir_3
+Tau
+[".";"f3.txt";"f1.txt";".."]
+
+readdir /non_empty_dir_3/
+Tau
+[".";"f3.txt";"f1.txt";".."]
+
+
+readdir /no_such_dir
+Tau
+ENOENT
+
+readdir /no_such_dir/
+Tau
+ENOENT
+
+
+
+

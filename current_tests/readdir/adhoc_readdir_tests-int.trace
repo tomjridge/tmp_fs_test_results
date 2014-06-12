@@ -1,0 +1,41 @@
+# adhoc_readdir_tests
+#
+# initialization
+mkdir /empty_dir 0o777
+mkdir /non_empty_dir_1 0o777
+mkdir /non_empty_dir_2 0o777
+mkdir /non_empty_dir_3 0o777
+
+open_close /non_empty_dir_1/f1.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_1/f2.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_1/f3.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_1/f4.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_1/f;5.txt [O_RDWR;O_CREAT] 0o666
+
+open_close /non_empty_dir_2/f4.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_2/f3.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_2/f2.txt [O_RDWR;O_CREAT] 0o666
+open_close /non_empty_dir_2/f1.txt [O_RDWR;O_CREAT] 0o666
+
+open_close /non_empty_dir_3/f1.txt [O_RDWR;O_CREAT] 0o666
+open /non_empty_dir_3/f3.txt [O_RDWR;O_CREAT] 0o666
+write (FD 3) "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875 
+close (FD 3)
+
+# the read tests
+
+readdir /empty_dir
+readdir /empty_dir/
+
+readdir /non_empty_dir_1
+readdir /non_empty_dir_1/
+readdir /non_empty_dir_2
+readdir /non_empty_dir_2/
+readdir /non_empty_dir_3
+readdir /non_empty_dir_3/
+
+readdir /no_such_dir
+readdir /no_such_dir/
+
+
+

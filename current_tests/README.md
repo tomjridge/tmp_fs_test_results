@@ -21,7 +21,7 @@ open    | file_descriptors, open
 pread   | file_descriptors
 pwrite  | file_descriptors
 read    | file_descriptors
-readdir | -
+readdir | readdir
 readlink| -
 rename  | rename
 rmdir   | rmdir
@@ -46,6 +46,9 @@ write   | file_descriptors
 
 ## open
 - 2014-06-02 OK
+
+## readdir
+- 2014-06-12 OK, but readdir needs to be changed
 
 ## rename
 - 2014-05-27 OK
