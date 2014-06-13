@@ -1,0 +1,527 @@
+# adhoc_link_tests
+
+# initialization
+
+mkdir /dir_1 0o777
+Tau
+None1
+
+mkdir /dir_1/dir_11 0o777
+Tau
+None1
+
+mkdir /dir_2 0o777
+Tau
+None1
+
+
+open /dir_1/f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "content of /dir_1/f1.txt" 24
+Tau
+Int1(24)
+
+close (FD 3)
+Tau
+None1
+
+
+open /dir_1/f2.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "content of /dir_1/f2.txt" 24
+Tau
+Int1(24)
+
+close (FD 3)
+Tau
+None1
+
+
+open /dir_2/f1.txt [O_RDWR;O_CREAT] 0o666
+Tau
+Int1(3)
+
+write (FD 3) "content of /dir_2/f1.txt" 24
+Tau
+Int1(24)
+
+close (FD 3)
+Tau
+None1
+
+
+
+###################################################
+# simple tests, that mimic common use-cases
+###################################################
+
+# create a symlink to an existing file an read the file
+# through the symlink
+
+symlink /dir_1/f1.txt /symlink_1
+Tau
+None1
+
+open /symlink_1 [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+# try two indirections
+symlink /symlink_1 /symlink_2
+Tau
+None1
+
+open /symlink_2 [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+# remove symlink 1 and read symlink 2
+unlink /symlink_1
+Tau
+None1
+
+open /symlink_2 [O_RDONLY]
+Tau
+ENOENT
+
+pread (FD 3) 1000 0
+Tau
+EBADF
+
+close (FD 3)
+Tau
+EBADF
+
+
+# now try symbolic links to a directory
+symlink /dir_1 /symlink_1
+Tau
+None1
+
+
+open /symlink_1/f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+open /symlink_2/f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+# renaming of symbolic links renames links not pointed to files
+rename /symlink_2 /symlink_2b
+Tau
+None1
+
+open /symlink_2b/f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+open /dir_1/f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+open /symlink_2/f1.txt [O_RDONLY]
+Tau
+ENOENT
+
+pread (FD 3) 1000 0
+Tau
+EBADF
+
+close (FD 3)
+Tau
+EBADF
+
+
+
+# try relative symbolic links
+symlink f2.txt /dir_1/symlink_f2.txt
+Tau
+None1
+
+open /dir_1/symlink_f2.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_1/f2.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+symlink ../dir_2/f1.txt /dir_1/symlink_d2_f1.txt
+Tau
+None1
+
+open /dir_1/symlink_d2_f1.txt [O_RDONLY]
+Tau
+Int1(3)
+
+pread (FD 3) 1000 0
+Tau
+Bytes1("content of /dir_2/f1.txt")
+
+close (FD 3)
+Tau
+None1
+
+
+# read the content of symbolic links
+readlink /symlink_1
+Tau
+Bytes1("/dir_1")
+
+readlink /symlink_1/
+Tau
+EINVAL
+
+readlink /no_such_link
+Tau
+ENOENT
+
+readlink /symlink_1b
+Tau
+ENOENT
+
+readlink /symlink_1b/
+Tau
+ENOENT
+
+readlink /dir_1/symlink_f2.txt
+Tau
+Bytes1("f2.txt")
+
+readlink /dir_1/symlink_d2_f1.txt
+Tau
+Bytes1("../dir_2/f1.txt")
+
+
+# cleanup
+unlink /symlink_1
+Tau
+None1
+
+unlink /symlink_2b
+Tau
+None1
+
+unlink /dir_1/symlink_f2.txt
+Tau
+None1
+
+unlink /dir_1/symlink_d2_f1.txt
+Tau
+None1
+
+
+
+###################################################
+# testing for corners
+###################################################
+
+# linking to non-existing dirs is OK
+symlink /no_such_dir/ /slink_no_such1
+Tau
+None1
+
+symlink /no_such_file /slink_no_such2
+Tau
+None1
+
+chdir /slink_no_such1
+Tau
+ENOENT
+
+unlink /slink_no_such1
+Tau
+None1
+
+unlink /slink_no_such2
+Tau
+None1
+
+
+# existing files and dirs canot be overriden by symlink
+symlink /dir_1 /dir_2
+Tau
+EEXIST
+
+symlink /dir_1 /dir_1/f1.txt
+Tau
+EEXIST
+
+symlink /dir_1 /dir_1/symlink.txt
+Tau
+None1
+
+symlink /dir_2 /dir_1/symlink.txt
+Tau
+EEXIST
+
+unlink /dir_1/symlink.txt
+Tau
+None1
+
+
+# the new link name must not end with a slash
+symlink xyz /slink_1
+Tau
+None1
+
+symlink xyz /slink_2/
+Tau
+ENOENT
+
+unlink /slink_1
+Tau
+None1
+
+
+# cyclic links can be created, but raise ELOOP when followed
+symlink /cyclic_link1 /cyclic_link2
+Tau
+None1
+
+symlink /cyclic_link2 /cyclic_link1
+Tau
+None1
+
+chdir /cyclic_link1
+Tau
+ELOOP
+
+unlink /cyclic_link1
+Tau
+None1
+
+unlink /cyclic_link2
+Tau
+None1
+
+
+# playing around with trailing slashes
+symlink /dir_1/f1.txt /filelink
+Tau
+None1
+
+symlink /dir_1 /dirlink
+Tau
+None1
+
+
+open_close /filelink [O_RDONLY]
+Tau
+None1
+
+open_close /filelink [O_RDONLY]
+Tau
+None1
+
+
+chdir /dirlink
+Tau
+None1
+
+chdir /dirlink/
+Tau
+None1
+
+open_close f1.txt [O_RDONLY]
+Tau
+None1
+
+unlink /dirlink
+Tau
+None1
+
+unlink /filelink
+Tau
+None1
+
+chdir /
+Tau
+None1
+
+
+# follow a symlink to a dir and then go to parent dir
+symlink /dir_1/dir_11 /dirlink
+Tau
+None1
+
+chdir /dirlink
+Tau
+None1
+
+chdir ..
+Tau
+None1
+
+# we should be in /dir_1 now, not /, so we can read f1.txt
+open_close f1.txt [O_RDONLY]
+Tau
+None1
+
+open_close dir_1/f1.txt [O_RDONLY]
+Tau
+ENOENT
+
+unlink /dirlink
+Tau
+None1
+
+
+
+###################################################
+# whether a symbolic link that occurs as the last
+# component of a resolved path is followed depends
+# on the command, so test it for all commands
+###################################################
+
+symlink /dir_1 /dir_link
+Tau
+None1
+
+symlink /dir_1/f1.txt /file_link
+Tau
+None1
+
+
+link /dir_1 /dir_3
+Tau
+EPERM
+
+link /dir_link /dir_4
+Tau
+None1
+
+link /dir_1/f1.txt /f1.txt
+Tau
+None1
+
+link /file_link /f2.txt
+Tau
+None1
+
+
+mkdir /dir_link 0o777
+Tau
+EEXIST
+
+mkdir /file_link 0o777
+Tau
+EEXIST
+
+mkdir /dir_1 0o777
+Tau
+EEXIST
+
+mkdir /dir_1/f1.txt 0o777
+Tau
+EEXIST
+
+
+symlink /dir_5 /new_dir_link
+Tau
+None1
+
+mkdir /new_dir_link 0o777
+Tau
+EEXIST
+
+
+symlink /f_5 /new_file_link_1
+Tau
+None1
+
+symlink /f_6 /new_file_link_2
+Tau
+None1
+
+open_close /new_file_link_1 [O_RDWR;O_CREAT] 0o666
+Tau
+None1
+
+symlink xyz /new_file_link_2
+Tau
+EEXIST
+
+
+stat /dir_link
+Tau
+{ st_dev=2049; st_ino=1458207; st_kind=S_IFDIR; st_perm=0o755; st_nlink=3; st_uid=0; st_gid=0; st_rdev=0; st_size=4096; }
+
+stat /file_link
+Tau
+{ st_dev=2049; st_ino=1458210; st_kind=S_IFREG; st_perm=0o644; st_nlink=2; st_uid=0; st_gid=0; st_rdev=0; st_size=24; }
+
+
+truncate /file_link 0
+Tau
+None1
+
+stat /file_link
+Tau
+{ st_dev=2049; st_ino=1458210; st_kind=S_IFREG; st_perm=0o644; st_nlink=2; st_uid=0; st_gid=0; st_rdev=0; st_size=0; }
+
+

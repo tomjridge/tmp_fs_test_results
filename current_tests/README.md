@@ -22,11 +22,11 @@ pread   | file_descriptors
 pwrite  | file_descriptors
 read    | file_descriptors
 readdir | readdir
-readlink| -
+readlink| symlink
 rename  | rename
 rmdir   | rmdir
 stat    | stat
-symlink | -
+symlink | symlink
 truncate| truncate
 umask   | -
 unlink  | unlink
@@ -65,6 +65,9 @@ write   | file_descriptors
   test infrastructure needs improving to compare stat results
 - 2014-06-12 OK
   rerun after implementing comparing stat results correctly
+
+## symlink
+- 2014-06-13 OK
 
 ## truncate
 - 2014-05-30 OK
