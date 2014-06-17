@@ -1,0 +1,153 @@
+processing file 'adhoc_open_multiple_tests-check-os.trace' ...
+        # Tests for open and close with multiple
+        # file descriptors opened by multiple processes
+        # essentially just check we get the right ids back
+
+        # WARNING: these tests won't work with posix,
+        # because its implementation maps everything to
+        # just one process
+
+     8: create Pid 2 (User_id 0) (Group_id 0)
+
+        ##############################################
+        # basic cases that should work
+        ##############################################
+
+        # create a file 
+    15: Pid 1 -> open f1.txt [O_WRONLY;O_CREAT] 0o644
+    16: Tau
+    17: Pid 1 <- RV_num(3)
+
+    19: Pid 1 -> close (FD 3)
+    20: Tau
+    21: Pid 1 <- RV_none
+
+        # and another file
+    24: Pid 1 -> open f2.txt [O_WRONLY;O_CREAT] 0o644
+    25: Tau
+    26: Pid 1 <- RV_num(3)
+
+    28: Pid 1 -> close (FD 3)
+    29: Tau
+    30: Pid 1 <- RV_none
+
+
+        # open both files in the same process
+    34: Pid 1 -> open f1.txt [O_RDONLY]
+    35: Tau
+    36: Pid 1 <- RV_num(3)
+
+    38: Pid 1 -> open f2.txt [O_RDONLY]
+    39: Tau
+    40: Pid 1 <- RV_num(4)
+
+    42: Pid 1 -> close (FD 3)
+    43: Tau
+    44: Pid 1 <- RV_none
+
+    46: Pid 1 -> close (FD 4)
+    47: Tau
+    48: Pid 1 <- RV_none
+
+
+        # open both files in the same process 
+        # and close and open again
+    53: Pid 1 -> open f1.txt [O_RDONLY]
+    54: Tau
+    55: Pid 1 <- RV_num(3)
+
+    57: Pid 1 -> open f2.txt [O_RDONLY]
+    58: Tau
+    59: Pid 1 <- RV_num(4)
+
+    61: Pid 1 -> close (FD 4)
+    62: Tau
+    63: Pid 1 <- RV_none
+
+    65: Pid 1 -> open f2.txt [O_RDONLY]
+    66: Tau
+    67: Pid 1 <- RV_num(4)
+
+    69: Pid 1 -> close (FD 3)
+    70: Tau
+    71: Pid 1 <- RV_none
+
+    73: Pid 1 -> close (FD 4)
+    74: Tau
+    75: Pid 1 <- RV_none
+
+
+        # open both files in the same process 
+        # and close and open again
+    80: Pid 1 -> open f1.txt [O_RDONLY]
+    81: Tau
+    82: Pid 1 <- RV_num(3)
+
+    84: Pid 1 -> open f2.txt [O_RDONLY]
+    85: Tau
+    86: Pid 1 <- RV_num(4)
+
+    88: Pid 1 -> close (FD 3)
+    89: Tau
+    90: Pid 1 <- RV_none
+
+    92: Pid 1 -> open f1.txt [O_RDONLY]
+    93: Tau
+    94: Pid 1 <- RV_num(3)
+
+    96: Pid 1 -> close (FD 4)
+    97: Tau
+    98: Pid 1 <- RV_none
+
+   100: Pid 1 -> close (FD 3)
+   101: Tau
+   102: Pid 1 <- RV_none
+
+
+        # open both files in the same process 
+        # and close and open again
+   107: Pid 1 -> open f1.txt [O_RDONLY]
+   108: Tau
+   109: Pid 1 <- RV_num(3)
+
+   111: Pid 1 -> open f2.txt [O_RDONLY]
+   112: Tau
+   113: Pid 1 <- RV_num(4)
+
+   115: Pid 1 -> close (FD 3)
+   116: Tau
+   117: Pid 1 <- RV_none
+
+   119: Pid 1 -> open f1.txt [O_RDONLY]
+   120: Tau
+   121: Pid 1 <- RV_num(3)
+
+   123: Pid 1 -> close (FD 4)
+   124: Tau
+   125: Pid 1 <- RV_none
+
+   127: Pid 1 -> close (FD 3)
+   128: Tau
+   129: Pid 1 <- RV_none
+
+
+
+
+        # open both files in the different processes
+   135: Pid 1 -> open f1.txt [O_RDONLY]
+   136: Tau
+   137: Pid 1 <- RV_num(3)
+
+   139: Pid 2 -> open f2.txt [O_RDONLY]
+   140: Tau
+   141: Pid 2 <- RV_num(3)
+
+   143: Pid 1 -> close (FD 3)
+   144: Tau
+   145: Pid 1 <- RV_none
+
+   147: Pid 2 -> close (FD 3)
+   148: Tau
+   149: Pid 2 <- RV_none
+
+trace accepted

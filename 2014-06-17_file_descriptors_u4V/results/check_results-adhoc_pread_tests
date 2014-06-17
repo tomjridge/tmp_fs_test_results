@@ -1,0 +1,335 @@
+        # adhoc_pread_tests2: adhoc tests to check behaviour of read in various situations
+
+
+        ##############################################
+        # initialization
+        ##############################################
+
+        # empty and non-empty directories to read from
+     8: mkdir /empty_dir 0o777
+        RV_none
+     9: mkdir /non_empty_dir 0o777
+        RV_none
+
+        # create files with different contents in the non-empty directory
+    12: chdir /non_empty_dir
+        RV_none
+
+        # f1.txt is empty
+    15: open_close f1.txt [O_RDWR;O_CREAT] 0o666
+        RV_none
+
+        # f2.txt contains some short text
+    18: open f2.txt [O_RDWR;O_CREAT] 0o666
+        RV_num(3)
+    19: write (FD 3) "Lorem ipsum dolor sit a" 23
+        RV_num(23)
+    20: close (FD 3)
+        RV_none
+
+        # f3.txt contains all kinds of strange characters
+    23: open f3.txt [O_RDWR;O_CREAT] 0o666
+        RV_num(3)
+    24: write (FD 3) "\"-#@/\000\001\001\243\b" 10
+        RV_num(10)
+    25: close (FD 3)
+        RV_none
+
+
+        ##############################################
+        # read on an empty file
+        ##############################################
+
+        # read nothing 
+    33: open f1.txt [O_RDONLY]
+        RV_num(3)
+    34: pread (FD 3) 0 0
+        RV_bytes("")
+    35: close (FD 3)
+        RV_none
+
+        # read 1 char beyond end
+    38: open f1.txt [O_RDONLY]
+        RV_num(3)
+    39: pread (FD 3) 1 0
+        RV_bytes("")
+    40: close (FD 3)
+        RV_none
+
+        # read 1 char after seeking beyond end
+    43: open f1.txt [O_RDONLY]
+        RV_num(3)
+    44: pread (FD 3) 1 100
+        RV_bytes("")
+    45: close (FD 3)
+        RV_none
+
+        # read with negative offset 
+    48: open f1.txt [O_RDONLY]
+        RV_num(3)
+    49: pread (FD 3) 1 -100
+        EINVAL
+    50: close (FD 3)
+        RV_none
+
+
+
+        ##############################################
+        # read on a non-empty file
+        ##############################################
+
+        # f2.txt is 23 bytes long
+
+        # pread 0 chars
+    61: open f2.txt [O_RDONLY]
+        RV_num(3)
+    62: pread (FD 3) 0 0
+        RV_bytes("")
+    63: close (FD 3)
+        RV_none
+
+        # read 0 chars
+    66: open f2.txt [O_RDONLY]
+        RV_num(3)
+    67: read (FD 3) 0
+        RV_bytes("")
+    68: close (FD 3)
+        RV_none
+
+        # pread 2 chars
+    71: open f2.txt [O_RDONLY]
+        RV_num(3)
+    72: pread (FD 3) 2 0
+        RV_bytes("Lo")
+    73: close (FD 3)
+        RV_none
+
+        # read 2 chars
+    76: open f2.txt [O_RDONLY]
+        RV_num(3)
+    77: read (FD 3) 2
+        RV_bytes("Lo")
+    78: close (FD 3)
+        RV_none
+
+        # pread 2 chars with offset 5
+    81: open f2.txt [O_RDONLY]
+        RV_num(3)
+    82: pread (FD 3) 2 5
+        RV_bytes(" i")
+    83: close (FD 3)
+        RV_none
+
+        # read 2 chars and then 3, preads don't influence each other
+    86: open f2.txt [O_RDONLY]
+        RV_num(3)
+    87: pread (FD 3) 2 0
+        RV_bytes("Lo")
+    88: pread (FD 3) 3 0
+        RV_bytes("Lor")
+    89: close (FD 3)
+        RV_none
+
+        # read 2 chars and then 3, reads influence each other
+    92: open f2.txt [O_RDONLY]
+        RV_num(3)
+    93: read (FD 3) 2
+        RV_bytes("Lo")
+    94: read (FD 3) 3
+        RV_bytes("rem")
+    95: close (FD 3)
+        RV_none
+
+        # pread over end of file
+    98: open f2.txt [O_RDONLY]
+        RV_num(3)
+    99: pread (FD 3) 100 0
+        RV_bytes("Lorem ipsum dolor sit a")
+   100: close (FD 3)
+        RV_none
+
+        # read over end of file
+   103: open f2.txt [O_RDONLY]
+        RV_num(3)
+   104: read (FD 3) 100
+        RV_bytes("Lorem ipsum dolor sit a")
+   105: close (FD 3)
+        RV_none
+
+        # pread just after end
+   108: open f2.txt [O_RDONLY]
+        RV_num(3)
+   109: pread (FD 3) 1 23
+        RV_bytes("")
+   110: close (FD 3)
+        RV_none
+
+        # pread far beyond end
+   113: open f2.txt [O_RDONLY]
+        RV_num(3)
+   114: pread (FD 3) 1 100
+        RV_bytes("")
+   115: close (FD 3)
+        RV_none
+
+        # pread over end
+   118: open f2.txt [O_RDONLY]
+        RV_num(3)
+   119: pread (FD 3) 5 20
+        RV_bytes("t a")
+   120: close (FD 3)
+        RV_none
+
+        # pread with negative offset
+   123: open f2.txt [O_RDONLY]
+        RV_num(3)
+   124: pread (FD 3) 1 -100
+        EINVAL
+   125: close (FD 3)
+        RV_none
+
+        # multiple preads don't influence each other or reads
+   128: open f2.txt [O_RDONLY]
+        RV_num(3)
+   129: read (FD 3) 2
+        RV_bytes("Lo")
+   130: pread (FD 3) 5 10
+        RV_bytes("m dol")
+   131: read (FD 3) 3
+        RV_bytes("rem")
+   132: pread (FD 3) 5 2
+        RV_bytes("rem i")
+   133: read (FD 3) 2
+        RV_bytes(" i")
+   134: close (FD 3)
+        RV_none
+
+        # read is influenced by seek
+   137: open f2.txt [O_RDONLY]
+        RV_num(3)
+   138: lseek (FD 3) 6 SEEK_SET
+        RV_num(6)
+   139: read (FD 3) 5
+        RV_bytes("ipsum")
+   140: close (FD 3)
+        RV_none
+
+        # pread is not influenced by seek
+   143: open f2.txt [O_RDONLY]
+        RV_num(3)
+   144: lseek (FD 3) 7 SEEK_SET
+        RV_num(7)
+   145: pread (FD 3) 5 6
+        RV_bytes("ipsum")
+   146: close (FD 3)
+        RV_none
+
+        ##############################################
+        # test reading of special chars
+        ##############################################
+
+   152: open f3.txt [O_RDONLY]
+        RV_num(3)
+   153: read (FD 3) 100
+        RV_bytes("\"-#@/\000\001\001\243\b")
+   154: close (FD 3)
+        RV_none
+
+
+        ##############################################
+        # reading from file-descriptors open for 
+        # different modes
+        ##############################################
+
+   162: open f2.txt [O_RDONLY]
+        RV_num(3)
+   163: read (FD 3) 100
+        RV_bytes("Lorem ipsum dolor sit a")
+   164: close (FD 3)
+        RV_none
+
+   166: open f2.txt [O_WRONLY]
+        RV_num(3)
+   167: read (FD 3) 100
+        EBADF
+   168: close (FD 3)
+        RV_none
+
+   170: open f2.txt [O_RDWR]
+        RV_num(3)
+   171: read (FD 3) 100
+        RV_bytes("Lorem ipsum dolor sit a")
+   172: close (FD 3)
+        RV_none
+
+        # open a descriptor, remove permission on file
+        # and then read. Since descriptor is open
+        # that should be fine, but opening again is not
+   177: open f2.txt [O_RDONLY]
+        RV_num(3)
+   178: chmod f2.txt 0o000
+        RV_none
+   179: read (FD 3) 100
+        RV_bytes("Lorem ipsum dolor sit a")
+   180: close (FD 3)
+        RV_none
+
+   182: open f2.txt [O_RDONLY]
+        EACCES
+   183: read (FD 3) 100
+        EBADF
+   184: close (FD 3)
+        EBADF
+
+   186: chmod f2.txt 0o666
+        RV_none
+   187: open f2.txt [O_RDONLY]
+        RV_num(3)
+   188: read (FD 3) 100
+        RV_bytes("Lorem ipsum dolor sit a")
+   189: close (FD 3)
+        RV_none
+
+        ##############################################
+        # read on directories
+        ##############################################
+
+   195: open /empty_dir [O_RDONLY]
+        RV_num(3)
+   196: pread (FD 3) 0 0
+        EISDIR
+   197: pread (FD 3) 1 0
+        EISDIR
+   198: pread (FD 3) 1 1
+        EISDIR
+   199: read (FD 3) 0
+        EISDIR
+   200: read (FD 3) 1
+        EISDIR
+   201: read (FD 3) 1
+        EISDIR
+   202: close (FD 3)
+        RV_none
+
+   204: open /non_empty_dir [O_RDONLY]
+        RV_num(3)
+   205: pread (FD 3) 0 0
+        EISDIR
+   206: pread (FD 3) 1 0
+        EISDIR
+   207: pread (FD 3) 1 1
+        EISDIR
+   208: read (FD 3) 0
+        EISDIR
+   209: read (FD 3) 1
+        EISDIR
+   210: read (FD 3) 1
+        EISDIR
+   211: close (FD 3)
+        RV_none
+
+
+        ##############################################
+        # finished :-)
+        ##############################################
+

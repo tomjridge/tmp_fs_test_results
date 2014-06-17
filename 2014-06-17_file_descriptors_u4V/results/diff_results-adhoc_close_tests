@@ -1,0 +1,125 @@
+        # Tests for close
+
+        # close on an fd that was never used
+     3: close (FD 3)
+        Tau
+        EBADF
+
+
+        # and again
+     6: close (FD 4)
+        Tau
+        EBADF
+
+
+        # open a normal file, and close
+     9: open f1.txt [O_WRONLY;O_CREAT] 0o644
+        Tau
+        RV_num(3)
+
+    10: write (FD 3) "0123456789" 10
+        Tau
+        RV_num(10)
+
+    11: close (FD 3)
+        Tau
+        RV_none
+
+
+        # open a normal file, and close twice
+    14: open f2.txt [O_WRONLY;O_CREAT] 0o644
+        Tau
+        RV_num(3)
+
+    15: close (FD 3)
+        Tau
+        RV_none
+
+    16: close (FD 3)
+        Tau
+        EBADF
+
+
+        # open and close a recently closed fd
+    19: open f1.txt [O_RDWR]
+        Tau
+        RV_num(3)
+
+    20: close (FD 3)
+        Tau
+        RV_none
+
+
+    22: open f1 [O_RDWR]
+        Tau
+        ENOENT
+
+    23: close (FD 3)
+        Tau
+        EBADF
+
+
+
+        # multiple overlapping opens
+    27: open f1.txt [O_RDWR]
+        Tau
+        RV_num(3)
+
+    28: open f2.txt [O_RDWR]
+        Tau
+        RV_num(4)
+
+    29: close (FD 3)
+        Tau
+        RV_none
+
+    30: open f1.txt [O_RDWR]
+        Tau
+        RV_num(3)
+
+    31: close (FD 4)
+        Tau
+        RV_none
+
+    32: close (FD 3)
+        Tau
+        RV_none
+
+
+
+        # opening a directory
+    36: mkdir d1 0o755
+        Tau
+        RV_none
+
+    37: open d1 [O_RDWR]
+        Tau
+        EISDIR
+
+    38: close (FD 3)
+        Tau
+        EBADF
+
+    39: open d1 [O_RDWR]
+        Tau
+        EISDIR
+
+    40: close (FD 3)
+        Tau
+        EBADF
+
+
+        # closing stdin
+    43: close (FD 0)
+        Tau
+        RV_none
+
+
+        # FIXME we can't close stdout because we are using it to return results of tests!
+        # close (FD 1)
+
+        # FIXME we probably shouldn't close stderr either
+        # close (FD 2)
+
+
+trace accepted

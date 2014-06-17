@@ -1,0 +1,124 @@
+        # adhoc_readdir_tests
+        #
+        # initialization
+     3: mkdir /empty_dir 0o777
+        Tau
+        RV_none
+
+     4: mkdir /non_empty_dir_1 0o777
+        Tau
+        RV_none
+
+     5: mkdir /non_empty_dir_2 0o777
+        Tau
+        RV_none
+
+     6: mkdir /non_empty_dir_3 0o777
+        Tau
+        RV_none
+
+
+     8: open_close /non_empty_dir_1/f1.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+     9: open_close /non_empty_dir_1/f2.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    10: open_close /non_empty_dir_1/f3.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    11: open_close /non_empty_dir_1/f4.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    12: open_close /non_empty_dir_1/f;5.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+
+    14: open_close /non_empty_dir_2/f4.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    15: open_close /non_empty_dir_2/f3.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    16: open_close /non_empty_dir_2/f2.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    17: open_close /non_empty_dir_2/f1.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+
+    19: open_close /non_empty_dir_3/f1.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_none
+
+    20: open /non_empty_dir_3/f3.txt [O_RDWR;O_CREAT] 0o666
+        Tau
+        RV_num(3)
+
+    21: write (FD 3) "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an" 875
+        Tau
+        RV_num(875)
+
+    22: close (FD 3)
+        Tau
+        RV_none
+
+
+        # the read tests
+
+    26: readdir /empty_dir
+        Tau
+        ["..";"."]
+
+    27: readdir /empty_dir/
+        Tau
+        ["..";"."]
+
+
+    29: readdir /non_empty_dir_1
+        Tau
+        ["f1.txt";"..";"f4.txt";"f;5.txt";"f3.txt";".";"f2.txt"]
+
+    30: readdir /non_empty_dir_1/
+        Tau
+        ["f1.txt";"..";"f4.txt";"f;5.txt";"f3.txt";".";"f2.txt"]
+
+    31: readdir /non_empty_dir_2
+        Tau
+        ["f1.txt";"..";"f4.txt";"f3.txt";".";"f2.txt"]
+
+    32: readdir /non_empty_dir_2/
+        Tau
+        ["f1.txt";"..";"f4.txt";"f3.txt";".";"f2.txt"]
+
+    33: readdir /non_empty_dir_3
+        Tau
+        ["f1.txt";"..";"f3.txt";"."]
+
+    34: readdir /non_empty_dir_3/
+        Tau
+        ["f1.txt";"..";"f3.txt";"."]
+
+
+    36: readdir /no_such_dir
+        Tau
+        ENOENT
+
+    37: readdir /no_such_dir/
+        Tau
+        ENOENT
+
+
+
+
+
+trace accepted

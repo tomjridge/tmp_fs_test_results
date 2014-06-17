@@ -1,0 +1,129 @@
+        # Tests for a file underlying a file-descriptor
+        # being modified while the descriptor is open
+
+        # create a file with some content
+     4: open f1.txt [O_RDWR;O_CREAT] 0o644
+        Tau
+        RV_num(3)
+
+     5: write (FD 3) "0123456789" 10
+        Tau
+        RV_num(10)
+
+
+     7: open f1.txt [O_RDONLY]
+        Tau
+        RV_num(4)
+
+        # check we are at the beginning
+     9: read (FD 4) 100
+        Tau
+        RV_bytes("0123456789")
+
+
+        # check lseek to FD 4 does not affect FD 3
+    12: lseek (FD 4) 0 SEEK_SET
+        Tau
+        RV_num(0)
+
+    13: write (FD 3) "AB" 2
+        Tau
+        RV_num(2)
+
+
+        # but content is present in both
+    16: pread (FD 3) 100 0
+        Tau
+        RV_bytes("0123456789AB")
+
+    17: pread (FD 4) 100 0
+        Tau
+        RV_bytes("0123456789AB")
+
+
+    19: close (FD 3)
+        Tau
+        RV_none
+
+    20: close (FD 4)
+        Tau
+        RV_none
+
+
+
+
+        # open f1, then delete it
+    25: open f1.txt [O_RDONLY]
+        Tau
+        RV_num(3)
+
+    26: unlink f1.txt
+        Tau
+        RV_none
+
+    27: pread (FD 3) 100 0
+        Tau
+        RV_bytes("0123456789AB")
+
+
+    29: open_close f1.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+
+    31: close (FD 3)
+        Tau
+        RV_none
+
+
+
+        # open f1, then rename it
+    35: open f1.txt [O_RDWR;O_CREAT] 0o644
+        Tau
+        RV_num(3)
+
+    36: write (FD 3) "0123456789" 10
+        Tau
+        RV_num(10)
+
+    37: close (FD 3)
+        Tau
+        RV_none
+
+
+    39: open f1.txt [O_RDONLY]
+        Tau
+        RV_num(3)
+
+    40: rename f1.txt f2.txt
+        Tau
+        RV_none
+
+    41: pread (FD 3) 100 0
+        Tau
+        RV_bytes("0123456789")
+
+
+    43: open_close f1.txt [O_RDONLY]
+        Tau
+        ENOENT
+
+    44: open f2.txt [O_RDONLY]
+        Tau
+        RV_num(4)
+
+    45: pread (FD 4) 100 0
+        Tau
+        RV_bytes("0123456789")
+
+    46: close (FD 4)
+        Tau
+        RV_none
+
+    47: close (FD 3)
+        Tau
+        RV_none
+
+
+
+trace accepted
